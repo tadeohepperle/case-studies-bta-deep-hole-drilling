@@ -1,0 +1,10 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Introduction}{3}{}%
+\contentsline {section}{\numberline {2}Methods}{3}{}%
+\contentsline {section}{\numberline {3}Descriptive Data Analysis}{3}{}%
+\contentsline {subsection}{\numberline {3.1}Data Cleaning}{3}{}%
+\contentsline {subsection}{\numberline {3.2}Variable exploration}{3}{}%
+\contentsline {section}{\numberline {4}Predictive Statistics}{3}{}%
+\contentsline {section}{\numberline {5}Summary}{3}{}%
+\contentsline {section}{Bibliography}{4}{}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
