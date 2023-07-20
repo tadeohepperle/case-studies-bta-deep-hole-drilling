@@ -1,0 +1,35 @@
+
+
+
+## Time Series paper:
+
+Fig 3. use the image from the statistics papger to explain what chatter and spiraling is
+
+3.1 "Chatter vibrations are also easily
+recognizable by an audible howling."
+
+Following on to chatter, the process may stabilize itself again or spiralling may appear.
+
+In all 21 experiments the signals of the drilling torque and feed force yieldedthe best results
+
+Chatter is easily recognized in the online measurements by a
+fast increase of the dynamic part of the torque, force and acceleration signals.
+This change of the dynamics of the process takes place within only a few
+rotations of the drilling tool.  ==> so how many seconds??
+
+It is possible to characterize dierent types of
+chatter in the frequency domain. => "high- and low-frequency chatter."
+
+Acoustic not good enough because noise of factory bad for data
+
+
+"Torque and force measured by strain gauges"
+
+
+The most expressive data are the signals of the drilling
+torque.
+
+
+show visual spectrogram = power spectrum
+
+autocorrelation function ACF in normal phase vs chatter, up to 1000 t = 0.05 sec

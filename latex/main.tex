@@ -55,18 +55,91 @@
 
 % todo: explain what variables are present in the data
 
+BTA deep hole drilling is a machining process that differs from traditional boring processes in some ways.
+BTA stands for Boring and Trepanning Association and describes dilling processes in which the hole depth to diameter ratio is particularly large. BTA drilling machines can create holes of a diameter of 7mm up to 700 mm and can achieve a depth to diameter radius of up to 400:1
+% https://unisig.com/information-and-resources/what-is-deep-hole-drilling/what-is-bta-drilling/
+Because the holes are XXXX the boring head needs
+
+
+
+% boring head usually self guiding. that is why it is a duynamic progress with distrubances
+% https://en.wikipedia.org/wiki/Deep_hole_drilling
+
+% How does BTA work?
+% what materials are drilled in?? mainly metal???
+% What is BTA used for?
+
+% How does it differ from traditional drilling?
+
+% We got measured data of XXX boring processes and want to see if we can predict chatter before onset.
+% Goal: detect the onset of chattering before it happens.
+
+% What variables did we measure?
+
+% How was the data recorded, gx1, format, etc.
+% different variables in the different chatter vs non chatter
+% what is this gx1 machine???
+
+% What attempts have been made in research to model these time series??
+
+% just audio does not work well (WHO said tha XXXXXX)
+% - neural networks
+% - area under ACF and KOlgomerov smirnov
+% - frequency based????
+
+
 \section{Methods}
 
-\section{Descriptive Data Analysis}
+% For reading the data, I developed a package that can read any gx1 time series. Availbale here: XXXXX
+% python was used for all data analysis. These packages:  TAKE FROM REPORT 1
 
-\subsection{Data Cleaning}
+\subsection{Power Spectrum}
+
+% Fourrier transform????
+
+\subsection{ACF (Auto-Correlation-Function)}
+
+% Autocovariance function
+
+% Autocorrelation function
+
+\subsection{Absolute Area under the ACF}
+
+\subsection{Kolmogorow-Smirnow-Test}
+
+\section{Data Analysis}
+
+% for each of the drillings, show all known parameters from metadata: in table?
+
+% how to detect the chatter -> Listen to all. Time series with chatter and without chatter
+
+%  show plots with audio signal and the sections marked in the signal
+
+% some descriptive analysis things. How long were all the time series?
 
 \subsection{Variable exploration}
 
-\section{Predictive Statistics}
+% Looking at frequency bands in the different regions??? -> Windows???
 
+% Conclusion that torque makes most sense as a predictor.
 
-\section{Summary}
+% Comparing Torque ACF before the chattering and when the chattering started.
+
+\subsection{Predictions}
+
+% using KOlgomerov and Area under ACF: 
+
+% look at torque AunderACF in comparison to different regions for that time series
+
+% select cutoff value
+
+\subsection{Avoid False Positives}
+
+% check on the non chatter data that we would actually not stop the machine.
+
+\section{Summary and Discussion}
+
+% this is too little data to do much. Also variables different between data.
 
 \newpage
 \addcontentsline{toc}{section}{Bibliography}

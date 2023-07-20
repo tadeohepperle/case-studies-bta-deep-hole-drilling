@@ -1,10 +1,14 @@
 \babel@toc {english}{}\relax 
 \contentsline {section}{\numberline {1}Introduction}{3}{}%
 \contentsline {section}{\numberline {2}Methods}{3}{}%
-\contentsline {section}{\numberline {3}Descriptive Data Analysis}{3}{}%
-\contentsline {subsection}{\numberline {3.1}Data Cleaning}{3}{}%
-\contentsline {subsection}{\numberline {3.2}Variable exploration}{3}{}%
-\contentsline {section}{\numberline {4}Predictive Statistics}{3}{}%
-\contentsline {section}{\numberline {5}Summary}{3}{}%
+\contentsline {subsection}{\numberline {2.1}Power Spectrum}{3}{}%
+\contentsline {subsection}{\numberline {2.2}ACF (Auto-Correlation-Function)}{3}{}%
+\contentsline {subsection}{\numberline {2.3}Absolute Area under the ACF}{3}{}%
+\contentsline {subsection}{\numberline {2.4}Kolmogorow-Smirnow-Test}{3}{}%
+\contentsline {section}{\numberline {3}Data Analysis}{3}{}%
+\contentsline {subsection}{\numberline {3.1}Variable exploration}{3}{}%
+\contentsline {subsection}{\numberline {3.2}Predictions}{3}{}%
+\contentsline {subsection}{\numberline {3.3}Avoid False Positives}{3}{}%
+\contentsline {section}{\numberline {4}Summary and Discussion}{3}{}%
 \contentsline {section}{Bibliography}{4}{}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
