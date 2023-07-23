@@ -58,10 +58,10 @@
 BTA deep hole drilling is a machining process that differs from traditional boring processes in some ways.
 BTA stands for Boring and Trepanning Association and describes dilling processes in which the hole depth to diameter ratio is particularly large. BTA drilling machines can create holes of a diameter of 7mm up to 700 mm and can achieve a depth to diameter radius of up to 400:1
 % https://unisig.com/information-and-resources/what-is-deep-hole-drilling/what-is-bta-drilling/
-Because the holes are XXXX the boring head needs
+Because the holes are XXXX the boring head needs to be flexible
 
 
-
+% explain what is chipping/zerspanung
 % boring head usually self guiding. that is why it is a duynamic progress with distrubances
 % https://en.wikipedia.org/wiki/Deep_hole_drilling
 
@@ -73,6 +73,56 @@ Because the holes are XXXX the boring head needs
 
 % We got measured data of XXX boring processes and want to see if we can predict chatter before onset.
 % Goal: detect the onset of chattering before it happens.
+
+\subsection{The Data}
+
+To answer the question what causes chatter in BTA boring processes we take a look at data from 10 BTA drilling runs in this report.
+As shown in Table \ref{tab:run_metadata}, each process has its own identifier (e.g. \emph{D4}), by which we refer to a process.
+We refer to the processes \emph{D4}, \emph{D6} and \emph{D8} as \emph{D}-processes, while \emph{V2}, \emph{V6}, \emph{V10}, \emph{V17}, \emph{V20}, \emph{V24} and \emph{V25} are called \emph{V}-processes.
+The \emph{D}-processes were recorded in 2002 and featured a damper installed 1240 mm away from clamping. In contrast to that the \emph{V}-processes were recorded in 2001 and did not use any damper in the BTA machine setup. It seems like the \emph{D}-processes do not show signs of chatter, while we can observe some form of chatter in all \emph{V}-processes.
+
+
+\begin{table}[ht]
+  \centering
+  \captionabove{Drilling Processes and their Metadata}
+  \label{tab:causes}
+  \begin{tabular}{r|rrrr}
+    \emph{identifier} & \emph{time} & \emph{cutting speed} & \emph{feed speed} & \emph{oil pressure} \\
+    \hline
+    \emph{D4}         & 3:54 min    & 111 m/min            & 0.231 mm/s        & unknown             \\
+    \emph{D6}         & 4:28 min    & 120 m/min            & 0.185 mm/s        & unknown             \\
+    \emph{D8}         & 4:27 min    & 90 m/min             & 0.250 mm/s        & unknown             \\
+    \emph{V2}         & 4:51 min    & 120 m/min            & 0.185 mm/s        & unknown             \\
+    \emph{V6}         & 4:25 min    & 111 m/min            & 0.231 mm/s        & 371 l/min           \\
+    \emph{V10}        & 4:25 min    & 111 m/min            & 0.231 mm/s        & 229 l/min           \\
+    \emph{V17}        & 4:44 min    & 120 m/min            & 0.185 mm/s        & 300 l/min           \\
+    \emph{V20}        & 4:58 min    & 90 m/min             & 0.250 mm/s        & 300 l/min           \\
+    \emph{V24}        & 4:29 min    & 120 m/min            & 0.185 mm/s        & 300 l/min           \\
+    \emph{V25}        & 4:33 min    & 120 m/min            & 0.185 mm/s        & 300 l/min           \\
+  \end{tabular}
+\end{table}
+
+There are a few parameters that are chosen in advance for each drilling process: \emph{cutting speed}, \emph{feed speed} and \emph{oil pressure}. Table \ref{tab:run_metadata} shows the
+The data for each of the 10 processes consists of a time series recording of several variables.
+The time series data was recorded with a sampling rate of 20000Hz, so in each second of the boring process, 20000 observations of each of the measured variables have been recorded. That means there is no missing data and a consistent time gap of 0.05 ms between measurements. The time span of the drilling processes ranges from 3:54 min to 4:58 min.
+The data was recorded utilizing the \emph{TEAC GX-1 Integrated Recorder} device, a machine developed by the \emph{TEAC} electronics company. The distribution of the device has been discontinued (SOURCE: https://daqlogsystems.co.uk/product/teac-gx-1/). The machine features a set of up to 8 input channels that can be fed with analog data.
+Then, 16-bit A/D (analog to digital) converters convert the analog signal into a digital one, saving the measurement of each channel as a 16 bit signed integer.
+The associated coefficients to convert the physical value to an integer value and vice versa need to be specified before the recording starts. They can be used to restore continous physical values from the 16-bit measurements. The data is stored in an \emph{interlaced} format. That means, for each point in time, the 16 bit value measured on each channel is appended to a file. So if we split the resulting file into chunks of $2*\emph{NUMBER\_OF\_CHANNELS}$ bytes, each of these chunks represents one point in time.
+
+The following vairables were measured for all 10 processes:
+\begin{itemize}
+  \item \emph{acoustic} - the audio signal in Pa (Pascal), noise and sound during the drilling process
+  \item \emph{moment} - the torsianal moment in Nm (Newtonmeter), also known as drilling torque. Measured at the drilling bar above the bore hole of the BTA drilling machine. It is created by forces of chipping, friction and deformation at the guide rails.
+  \item \emph{sync signal} - an electric signal that is triggered by the drilling head having a certain axial rotation. It flows once per revolution of the drilling head for a brief moment.
+  \item \emph{oil acceleration} - the acceleration of the drilling oil supply in $m/s^2$
+  \item \emph{force} - the force in feed direction in N (Newton). It is related to the \emph{feed speed} but also to the resistance (hardness) the work piece material has against being drilled
+\end{itemize}
+
+Besides that, the 7 \emph{V}-processes feature 2 additional variables for the acceleration of the drilling head: \emph{lateral acceleration} and \emph{frontal acceleration} (acceleration in frontal direction) each measured in $m/s^2$.
+The 3 \emph{D}-processes also contain the \emph{bending moment} in Nm as a variable. They also contain measurements on a variable called "bohrst", but it remains unclear to us what this variable stands for, hence we do not further discuss it in this report.
+
+
+
 
 % What variables did we measure?
 
