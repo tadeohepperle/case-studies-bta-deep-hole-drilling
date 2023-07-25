@@ -1,0 +1,18 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Introduction}{3}{}%
+\contentsline {subsection}{\numberline {1.1}The Data}{3}{}%
+\contentsline {subsubsection}{\numberline {1.1.1}Labels}{5}{}%
+\contentsline {subsection}{\numberline {1.2}Prior Research}{5}{}%
+\contentsline {section}{\numberline {2}Methods}{5}{}%
+\contentsline {subsection}{\numberline {2.1}Power Spectrum}{6}{}%
+\contentsline {subsection}{\numberline {2.2}Covariance and Correlation}{6}{}%
+\contentsline {subsection}{\numberline {2.3}Auto-Correlation Function (ACF)}{6}{}%
+\contentsline {subsubsection}{\numberline {2.3.1}Absolute Area under the ACF ($A_{ACF}$)}{7}{}%
+\contentsline {section}{\numberline {3}Data Analysis}{7}{}%
+\contentsline {subsection}{\numberline {3.1}Frequencies and ACF}{8}{}%
+\contentsline {subsection}{\numberline {3.2}Detect chatter with $A_{ACF}$}{10}{}%
+\contentsline {section}{\numberline {4}Summary and Discussion}{17}{}%
+\contentsline {section}{Bibliography}{18}{}%
+\contentsline {section}{\nonumberline Appendix}{19}{}%
+\contentsline {subsection}{A \hspace *{0.15cm} Additional figures}{19}{}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
