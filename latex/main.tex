@@ -149,6 +149,8 @@ The main focus of this report is to detect the change from \emph{no chatter} to 
 
 % how did WE do it?? What methods did we use???
 
+% what variables are important? What does prior research indicate?
+
 \section{Methods}
 
 This chapter briefly explains the statistical methods used. to apply them we use Python \citep{python} as statistical software. The Python packages numpy \citep{numpy}, pandas \citep{pandas}, matplotlib \citep{matplotlib} and mlxtend \citep{mlxtend} have been used. In addition we developed a custom python package called \emph{gx1convert} \citep{gx1convert} that was used to read in the data produced by the GX-1 device.
@@ -160,10 +162,8 @@ This chapter briefly explains the statistical methods used. to apply them we use
 
 % Fourrier transform????
 
-\subsection{ACF (Auto-Correlation Function)}
 
-
-\subsubsection{Covariance and Correlation}
+\subsection{Covariance and Correlation}
 
 Given a set of $n$ datapoints each consisting of a value on two metric variables X and Y, their covariance $s_{XY}$ can be computed as the product of the difference to the respective variable mean summed up for all datapoints and divided by $n$.
 
@@ -177,17 +177,25 @@ Because the covariance greatly depends on the units of measurement, it can be st
 The result $r_{XY}$ is known as Pearson's r or Pearson product-moment correlation coefficient. Note that $r_{XY}$ is symmetrical, so $r_{XY} = r_{YX}$ and in case that either $s_X$ or $s_Y$ is zero it is not defined. It is a standardized measure of linear correlation between two metric variables \citep[p.~538]{eid2017statistik}. A correlation of $r_{XY} = 1$ means perfect correlation.
 
 
-\subsubsection{Auto-Correlation Function (ACF)}
+\subsection{Auto-Correlation Function (ACF)}
 
-The auto-correlation function (ACF) shows how much a time series is correlated with a lagged version of itself. For a Time series X consisting of $n$ data points $x_1, ..., x_n$ the ACF is defined as a function that maps a lag $k$ to the correlation of X with   (SOURCE XXX TIME SERIES BOOK PAGE 4)
+The auto-correlation function (ACF) shows how much a time series is correlated with a lagged version of itself. For a Time series $X_t$ consisting of $n$ data points $x_1, ..., x_n$ the ACF is defined as a function $\rho(k)$ that maps an integer $k$ to the correlation of $X_t$ with $X_{t+1}$ (SOURCE XXX TIME SERIES BOOK PAGE 4):
 
-is a function that shows how much a ti
+\[ \rho(k) = Corr(X_t, X_{t+1}) \]
 
-% Autocovariance function
+In this equation, $k$ represents a lag value. In time series analysis we call a "lag", a shift of the time series along the temporal direction. The correlation is calculated over all possible values of $t$ where $1 \le t \le n - k$.For example for values $t = 3$ and $k = 2$, the variable $X_t$ would refer to the data point $x_3$ and $X_t$ would be $x_5$. From the equation follows that $\rho(0)$ is always 1, because $\rho(0) = Corr(X_t, X_t) = 1$. Because the ACF for higher lag values has less data point pairs available for correlation calculation, one should only calculate the ACF for lag values much less than the length of the time series itself.
+Interpreting the ACF only makes sense if the underlying process is (weakly) stationary (SOURCE XXX TIME SERIES PAGE 4). This should be given if we look at regions of a drilling process where mean and variance do not change too much. Periodicities in a time series also show as periodic patterns in the ACF.
 
-% Autocorrelation function
+% relationship between acf AND SFT
 
-\subsection{Absolute Area under the ACF ($A_{ACF}$)}
+\subsubsection{Absolute Area under the ACF ($A_{ACF}$)}
+
+XXX mention, that they used the ACF in a strategy to detect chatter in BTA drilling processes. Because the ACF carries information about periodic correlations in the time series, it should contain information of chatter. They selected a range of L lags $k \in \{0, ..., L\}$ and calculated the ACF $\rho(k)$ for each lag value. Then they summed up the absolute value.
+
+\[ A_{ACF} = \sum^{L}_{h=0}{|p(h)|} \]
+
+XXX chose a value of L=30 in their approach and calculated this $A_{ACF}$ value for small chunks of time cut out of the original time series.
+If there are strong resonating frequencies in the data, the $A_{ACF}$ value is expected to be higher.
 
 \section{Data Analysis}
 
@@ -302,10 +310,7 @@ Figure \ref{fig:v2-acoustic-acfs} and  Figure \ref{fig:v2-force-acfs} shows that
 \subsection{Detect chatter with $A_{ACF}$}
 
 We now split the time series into chunks with a width of 1000 data points. That is the equivalent of 50ms for each chunk. For each of these chunks we calculate the ACF up to lag 100.
-Using a similar approach as XXX(Statistics and Time Series Analyses of...)XXX we reduce these 101 coefficients down to an $A_{ACF}$ value that represents the absolute area under the autocorrelation function:
-
-\[ A_{ACF} = \sum^{100}_{h=0}{p(h)}\]
-
+Using a similar approach as XXX(Statistics and Time Series Analyses of...)XXX we reduce these 101 coefficients down to an $A_{ACF}$ value that represents the absolute area under the autocorrelation function $A_{ACF} = \sum^{L}_{h=0}{|p(h)|}$.
 Here $p(h)$ is the autocorrelation at lag $h$ calculated on the respective 1000-point chunk. Using this approach the \emph{non-chatter} segments had between 320 and 3800 chunks and the \emph{chatter} segments we composed of 200 to 2840 chunks each. Table \ref{tab:aacfstats} shows for each of the processes the average $A_{ACF}$ values in the \emph{chatter} and \emph{non-chatter} regions.
 
 \begin{table}[ht]
@@ -329,7 +334,7 @@ Here $p(h)$ is the autocorrelation at lag $h$ calculated on the respective 1000-
   \end{tabular}
 \end{table}
 
-We can see that all time series show an average $A_{ACF}$ value of around 10 - 21 in the non-chatter regions. Those processes that show chatter have average $A_{ACF}$ values of 58.62 to 61.54 in the chatter regions. That is a large difference. One way to interpret the $A_{ACF}$ values is, as a measure of how much any measured value can be predicted by the preceeding 100 values. They should be roughly proportional to something like an $R^2$ coefficient of determination in regression analysis, if we subtract 1 (for $lag = 0$) from the $A_{ACF}$ and divide it by 100. What Table \ref{tab:aacfstats} also shows it, that for all \emph{V}-processes the variance of the $A_{ACF}$ values is lower in the \emph{chatter} segments than in the \emph{non-chatter} segments. This is not surprising, because chatter is all about similar vibrations occuring for some time.
+We can see that all time series show an average $A_{ACF}$ value of around 10 - 21 in the non-chatter regions. Those processes that show chatter have average $A_{ACF}$ values of 58.62 to 61.54 in the chatter regions. That is a large difference. One way to interpret the $A_{ACF}$ values is, as a measure of how much any measured value can be predicted by the preceeding 100 values. This however is not very close to the truth, because it does not account for shared predictive variance between different lag values. What Table \ref{tab:aacfstats} also shows it, that for all \emph{V}-processes the variance of the $A_{ACF}$ values is lower in the \emph{chatter} segments than in the \emph{non-chatter} segments. This is not surprising, because chatter is all about similar vibrations occuring for some time.
 But it is also true, that some chunks in the \emph{non-chatter} segments have higher $A_{ACF}$ values that some chunks of the \emph{chatter} region of the same process, as the \emph{min} and \emph{max} columns in the table show. So to develop a policy that allows us to detect chatter based on the $A_{ACF}$ value we need to take a closer look at some graphs.
 
 \begin{figure}[p]
@@ -435,7 +440,7 @@ Table \ref{tab:pointdiff} shows when the threshold of $A_{ACF} = 50$ is surpasse
 \begin{table}[ht]
   \centering
   \captionabove{Time difference between the first point where $A_{ACF} > 50$ and start of \emph{chatter} segment.}
-  \label{tab:aacfstats}
+  \label{tab:pointdiff}
   \begin{tabular}{l|rr}
     \\
     process & time     & difference \\

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.11.2)  25 JUL 2023 22:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.11.2)  26 JUL 2023 01:03
 entering extended mode
 **"t:/Daten/Studium Msc Data Science/Semester IV/Case Studies/Project2/code/latex/main.tex"
 (t:/Daten/Studium Msc Data Science/Semester IV/Case Studies/Project2/code/latex/main.tex
@@ -518,209 +518,23 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 11
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [4]
 
-Package natbib Warning: Citation `python' on page 5 undefined on input line 154.
+Package natbib Warning: Citation `python' on page 5 undefined on input line 156.
 
 
-Package natbib Warning: Citation `numpy' on page 5 undefined on input line 154.
+Package natbib Warning: Citation `numpy' on page 5 undefined on input line 156.
 
 
-Package natbib Warning: Citation `pandas' on page 5 undefined on input line 154.
+Package natbib Warning: Citation `pandas' on page 5 undefined on input line 156.
 
 
-Package natbib Warning: Citation `matplotlib' on page 5 undefined on input line 154.
+Package natbib Warning: Citation `matplotlib' on page 5 undefined on input line 156.
 
 
-Package natbib Warning: Citation `mlxtend' on page 5 undefined on input line 154.
+Package natbib Warning: Citation `mlxtend' on page 5 undefined on input line 156.
 
 
-Package natbib Warning: Citation `gx1convert' on page 5 undefined on input line 154.
+Package natbib Warning: Citation `gx1convert' on page 5 undefined on input line 156.
 
-[5]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 190.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 190.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 190.
- [6]
+[5] [6]
 
-LaTeX Warning: Reference `all-moment' on page 7 undefined on input line 217.
-
-
-LaTeX Warning: Reference `all-acoustic' on page 7 undefined on input line 217.
-
-<../plots/v2-spec.png, id=33, 867.24pt x 867.24pt>
-File: ../plots/v2-spec.png Graphic file (type png)
-<use ../plots/v2-spec.png>
-Package pdftex.def Info: ../plots/v2-spec.png  used on input line 227.
-(pdftex.def)             Requested size: 403.31511pt x 403.31537pt.
-[7]
-<../plots/v2-moment-acfs.png, id=40, 867.24pt x 361.35pt>
-File: ../plots/v2-moment-acfs.png Graphic file (type png)
-<use ../plots/v2-moment-acfs.png>
-Package pdftex.def Info: ../plots/v2-moment-acfs.png  used on input line 237.
-(pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
-<../plots/v2-oil acceleration-acfs.png, id=41, 867.24pt x 361.35pt>
-File: ../plots/v2-oil acceleration-acfs.png Graphic file (type png)
-<use ../plots/v2-oil acceleration-acfs.png>
-Package pdftex.def Info: ../plots/v2-oil acceleration-acfs.png  used on input line 246.
-(pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
-<../plots/v2-force-acfs.png, id=42, 867.24pt x 361.35pt>
-File: ../plots/v2-force-acfs.png Graphic file (type png)
-<use ../plots/v2-force-acfs.png>
-Package pdftex.def Info: ../plots/v2-force-acfs.png  used on input line 258.
-(pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
-<../plots/v2-acoustic-acfs.png, id=43, 867.24pt x 361.35pt>
-File: ../plots/v2-acoustic-acfs.png Graphic file (type png)
-<use ../plots/v2-acoustic-acfs.png>
-Package pdftex.def Info: ../plots/v2-acoustic-acfs.png  used on input line 267.
-(pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
-<../plots/v2-sync signal-acfs.png, id=44, 867.24pt x 361.35pt>
-File: ../plots/v2-sync signal-acfs.png Graphic file (type png)
-<use ../plots/v2-sync signal-acfs.png>
-Package pdftex.def Info: ../plots/v2-sync signal-acfs.png  used on input line 279.
-(pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
-<../plots/v2-lateral acceleration-acfs.png, id=45, 867.24pt x 361.35pt>
-File: ../plots/v2-lateral acceleration-acfs.png Graphic file (type png)
-<use ../plots/v2-lateral acceleration-acfs.png>
-Package pdftex.def Info: ../plots/v2-lateral acceleration-acfs.png  used on input line 288.
-(pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
-<../plots/v2-frontal acceleration-acfs.png, id=46, 867.24pt x 361.35pt>
-File: ../plots/v2-frontal acceleration-acfs.png Graphic file (type png)
-<use ../plots/v2-frontal acceleration-acfs.png>
-Package pdftex.def Info: ../plots/v2-frontal acceleration-acfs.png  used on input line 297.
-(pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
- [8] [9 <../plots/v2-spec.png> <../plots/v2-moment-acfs.png>] [10 <../plots/v2-oil acceleration-acfs.png> <../plots/v2-force-acfs.png> <../plots/v2-acoustic-acfs.png>] [11 <../plots/v2-sync signal-acfs.png> <../plots/v2-lateral acceleration-acfs.png> <../plots/v2-frontal acceleration-acfs.png>]
-<../plots/d4-moment-aacf.png, id=67, 867.24pt x 361.35pt>
-File: ../plots/d4-moment-aacf.png Graphic file (type png)
-<use ../plots/d4-moment-aacf.png>
-Package pdftex.def Info: ../plots/d4-moment-aacf.png  used on input line 338.
-(pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
-<../plots/d6-moment-aacf.png, id=68, 867.24pt x 361.35pt>
-File: ../plots/d6-moment-aacf.png Graphic file (type png)
-<use ../plots/d6-moment-aacf.png>
-Package pdftex.def Info: ../plots/d6-moment-aacf.png  used on input line 347.
-(pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
-<../plots/d8-moment-aacf.png, id=69, 867.24pt x 361.35pt>
-File: ../plots/d8-moment-aacf.png Graphic file (type png)
-<use ../plots/d8-moment-aacf.png>
-Package pdftex.def Info: ../plots/d8-moment-aacf.png  used on input line 356.
-(pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
-<../plots/v2-moment-aacf.png, id=70, 867.24pt x 361.35pt>
-File: ../plots/v2-moment-aacf.png Graphic file (type png)
-<use ../plots/v2-moment-aacf.png>
-Package pdftex.def Info: ../plots/v2-moment-aacf.png  used on input line 368.
-(pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
- [12] [13 <../plots/d4-moment-aacf.png> <../plots/d6-moment-aacf.png> <../plots/d8-moment-aacf.png>]
-<../plots/v6-moment-aacf.png, id=81, 867.24pt x 361.35pt>
-File: ../plots/v6-moment-aacf.png Graphic file (type png)
-<use ../plots/v6-moment-aacf.png>
-Package pdftex.def Info: ../plots/v6-moment-aacf.png  used on input line 378.
-(pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
-<../plots/v10-moment-aacf.png, id=82, 867.24pt x 361.35pt>
-File: ../plots/v10-moment-aacf.png Graphic file (type png)
-<use ../plots/v10-moment-aacf.png>
-Package pdftex.def Info: ../plots/v10-moment-aacf.png  used on input line 388.
-(pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
-<../plots/v17-moment-aacf.png, id=83, 867.24pt x 361.35pt>
-File: ../plots/v17-moment-aacf.png Graphic file (type png)
-<use ../plots/v17-moment-aacf.png>
-Package pdftex.def Info: ../plots/v17-moment-aacf.png  used on input line 398.
-(pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
-<../plots/v20-moment-aacf.png, id=84, 867.24pt x 361.35pt>
-File: ../plots/v20-moment-aacf.png Graphic file (type png)
-<use ../plots/v20-moment-aacf.png>
-Package pdftex.def Info: ../plots/v20-moment-aacf.png  used on input line 407.
-(pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
-<../plots/v24-moment-aacf.png, id=85, 867.24pt x 361.35pt>
-File: ../plots/v24-moment-aacf.png Graphic file (type png)
-<use ../plots/v24-moment-aacf.png>
-Package pdftex.def Info: ../plots/v24-moment-aacf.png  used on input line 416.
-(pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
-<../plots/v25-moment-aacf.png, id=86, 867.24pt x 361.35pt>
-File: ../plots/v25-moment-aacf.png Graphic file (type png)
-<use ../plots/v25-moment-aacf.png>
-Package pdftex.def Info: ../plots/v25-moment-aacf.png  used on input line 425.
-(pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
-
-
-LaTeX Warning: Reference `tab:pointdiff' on page 14 undefined on input line 433.
-
-[14] [15 <../plots/v2-moment-aacf.png> <../plots/v6-moment-aacf.png> <../plots/v10-moment-aacf.png>] [16 <../plots/v17-moment-aacf.png> <../plots/v20-moment-aacf.png> <../plots/v24-moment-aacf.png>] [17] (main.bbl) [18]
-<../plots/all-force.png, id=108, 1011.78pt x 1373.13pt>
-File: ../plots/all-force.png Graphic file (type png)
-<use ../plots/all-force.png>
-Package pdftex.def Info: ../plots/all-force.png  used on input line 478.
-(pdftex.def)             Requested size: 492.94678pt x 669.00534pt.
-
-
-LaTeX Warning: Float too large for page by 29.55258pt on input line 481.
-
-<../plots/all-moment.png, id=109, 1011.78pt x 1373.13pt>
-File: ../plots/all-moment.png Graphic file (type png)
-<use ../plots/all-moment.png>
-Package pdftex.def Info: ../plots/all-moment.png  used on input line 487.
-(pdftex.def)             Requested size: 492.94678pt x 669.00534pt.
-
-LaTeX Warning: Float too large for page by 29.55258pt on input line 490.
-
-<../plots/all-sync signal.png, id=110, 1011.78pt x 1373.13pt>
-File: ../plots/all-sync signal.png Graphic file (type png)
-<use ../plots/all-sync signal.png>
-Package pdftex.def Info: ../plots/all-sync signal.png  used on input line 496.
-(pdftex.def)             Requested size: 492.94678pt x 669.00534pt.
-
-LaTeX Warning: Float too large for page by 29.55258pt on input line 499.
-
-<../plots/all-oil acceleration.png, id=111, 1011.78pt x 1373.13pt>
-File: ../plots/all-oil acceleration.png Graphic file (type png)
-<use ../plots/all-oil acceleration.png>
-Package pdftex.def Info: ../plots/all-oil acceleration.png  used on input line 506.
-(pdftex.def)             Requested size: 492.94678pt x 669.00534pt.
-
-LaTeX Warning: Float too large for page by 29.55258pt on input line 509.
-
-<../plots/all-acoustic.png, id=112, 1011.78pt x 1373.13pt>
-File: ../plots/all-acoustic.png Graphic file (type png)
-<use ../plots/all-acoustic.png>
-Package pdftex.def Info: ../plots/all-acoustic.png  used on input line 515.
-(pdftex.def)             Requested size: 492.94678pt x 669.00534pt.
-
-LaTeX Warning: Float too large for page by 29.55258pt on input line 518.
-
-<../plots/all-frontal acceleration m.png, id=113, 1011.78pt x 1156.32pt>
-File: ../plots/all-frontal acceleration m.png Graphic file (type png)
-<use ../plots/all-frontal acceleration m.png>
-Package pdftex.def Info: ../plots/all-frontal acceleration m.png  used on input line 525.
-(pdftex.def)             Requested size: 492.94678pt x 563.37291pt.
-<../plots/all-lateral acceleration m.png, id=114, 1011.78pt x 1156.32pt>
-File: ../plots/all-lateral acceleration m.png Graphic file (type png)
-<use ../plots/all-lateral acceleration m.png>
-Package pdftex.def Info: ../plots/all-lateral acceleration m.png  used on input line 535.
-(pdftex.def)             Requested size: 492.94678pt x 563.37291pt.
-
-Package natbib Warning: There were undefined citations.
-
-[19] [20 <../plots/v25-moment-aacf.png>] [21 <../plots/all-force.png>] [22 <../plots/all-moment.png>] [23 <../plots/all-sync signal.png>] [24 <../plots/all-oil acceleration.png>] [25 <../plots/all-acoustic.png>] [26 <../plots/all-frontal acceleration m.png>] [27 <../plots/all-lateral acceleration m.png>] (main.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
-Here is how much of TeX's memory you used:
- 11129 strings out of 478927
- 199649 string characters out of 2862392
- 639697 words of memory out of 3000000
- 28764 multiletter control sequences out of 15000+600000
- 485447 words of font info for 79 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 108i,9n,108p,10701b,560s stack positions out of 5000i,500n,10000p,200000b,80000s
-{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
-Output written on main.pdf (27 pages, 2611069 bytes).
-PDF statistics:
- 212 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 126 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+LaTeX Warning: Reference `all-moment' on page 7 

@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex main"] 1690318089 "main.aux" "main.bbl" "main" 1690318096
+["bibtex main"] 1690325640 "main.aux" "main.bbl" "main" 1690325686
   "C:/Program Files/MiKTeX/bibtex/bst/natbib/plainnat.bst" 1284455456 26816 ffe5423d2019860bad9f54bc402fac15 ""
-  "main.aux" 1690318095 8727 a9709c0de4f405b180b9f70d4de36ab9 "pdflatex"
+  "main.aux" 1690325685 8599 056250eb34e94da44dd8196299845ce8 "pdflatex"
   "references.bib" 1690316291 199 737dcb99af53419a38142fcf2bbec85a ""
   (generated)
-  "main.bbl"
   "main.blg"
-["pdflatex"] 1690318090 "t:/Daten/Studium Msc Data Science/Semester IV/Case Studies/Project2/code/latex/main.tex" "main.pdf" "main" 1690318096
+  "main.bbl"
+["pdflatex"] 1690325680 "t:/Daten/Studium Msc Data Science/Semester IV/Case Studies/Project2/code/latex/main.tex" "main.pdf" "main" 1690325686
   "../plots/all-acoustic.png" 1690131928 263275 d118b7b72dff305cde7969dbc34cc2e6 ""
   "../plots/all-force.png" 1690131807 270318 070c1e3871b94684a874eb0c5a3cdac1 ""
   "../plots/all-frontal acceleration m.png" 1690132765 201598 aa1033ac0a44cab27a97f2db4d089d70 ""
@@ -159,13 +159,13 @@
   "C:/Program Files/MiKTeX/tex/latex/xpatch/xpatch.sty" 1585224860 8510 7803f78066c4f9d008405191a4b43073 ""
   "C:/Users/tadeo/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1635890083 9705527 7593b605117244c7e3d8262e79a129e8 ""
   "C:/Users/tadeo/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1635890049 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
-  "main.aux" 1690318095 8727 a9709c0de4f405b180b9f70d4de36ab9 "pdflatex"
-  "main.bbl" 1690318090 488 bed432890c7f98384655864173544b3c "bibtex main"
-  "main.tex" 1690318077 31392 ebb4e5e66d448972a1ba0af5eccece6b ""
-  "main.toc" 1690318095 1264 f74bd485c066bc7ad987bfcdb4b6a6b5 "pdflatex"
-  "t:/Daten/Studium Msc Data Science/Semester IV/Case Studies/Project2/code/latex/main.tex" 1690318077 31392 ebb4e5e66d448972a1ba0af5eccece6b ""
+  "main.aux" 1690325685 8599 056250eb34e94da44dd8196299845ce8 "pdflatex"
+  "main.bbl" 1690325640 488 bed432890c7f98384655864173544b3c "bibtex main"
+  "main.tex" 1690325680 32982 cd91eb0c3bb9ba9a40bc3c7bf37cd3ba ""
+  "main.toc" 1690325685 1177 ef1aabeafe5323169f3767a8b7d92ba6 "pdflatex"
+  "t:/Daten/Studium Msc Data Science/Semester IV/Case Studies/Project2/code/latex/main.tex" 1690325680 32982 cd91eb0c3bb9ba9a40bc3c7bf37cd3ba ""
   (generated)
   "main.aux"
-  "main.pdf"
   "main.toc"
+  "main.pdf"
   "main.log"
