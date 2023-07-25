@@ -698,13 +698,204 @@ INPUT C:\Program Files\MiKTeX\tex\latex\lm\ts1lmr.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\lm\ts1lmr.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\lm\ts1lmr.fd
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ts1-lmr12.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmr12.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmr10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmr7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmmi12.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmmi10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmmi7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmsy10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmsy10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmsy7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT ..\plots\v2-spec.png
+INPUT ..\plots\v2-spec.png
+INPUT ..\plots\v2-spec.png
+INPUT ..\plots\v2-spec.png
+INPUT ..\plots\v2-spec.png
+INPUT ..\plots\v2-spec.png
+INPUT ..\plots\v2-spec.png
+INPUT ..\plots\v2-moment-acfs.png
+INPUT ..\plots\v2-moment-acfs.png
+INPUT ..\plots\v2-moment-acfs.png
+INPUT ..\plots\v2-moment-acfs.png
+INPUT ..\plots\v2-moment-acfs.png
+INPUT ..\plots\v2-moment-acfs.png
+INPUT ..\plots\v2-moment-acfs.png
+INPUT ..\plots\v2-oil acceleration-acfs.png
+INPUT ..\plots\v2-oil acceleration-acfs.png
+INPUT ..\plots\v2-oil acceleration-acfs.png
+INPUT ..\plots\v2-oil acceleration-acfs.png
+INPUT ..\plots\v2-oil acceleration-acfs.png
+INPUT ..\plots\v2-oil acceleration-acfs.png
+INPUT ..\plots\v2-oil acceleration-acfs.png
+INPUT ..\plots\v2-force-acfs.png
+INPUT ..\plots\v2-force-acfs.png
+INPUT ..\plots\v2-force-acfs.png
+INPUT ..\plots\v2-force-acfs.png
+INPUT ..\plots\v2-force-acfs.png
+INPUT ..\plots\v2-force-acfs.png
+INPUT ..\plots\v2-force-acfs.png
+INPUT ..\plots\v2-acoustic-acfs.png
+INPUT ..\plots\v2-acoustic-acfs.png
+INPUT ..\plots\v2-acoustic-acfs.png
+INPUT ..\plots\v2-acoustic-acfs.png
+INPUT ..\plots\v2-acoustic-acfs.png
+INPUT ..\plots\v2-acoustic-acfs.png
+INPUT ..\plots\v2-acoustic-acfs.png
+INPUT ..\plots\v2-sync signal-acfs.png
+INPUT ..\plots\v2-sync signal-acfs.png
+INPUT ..\plots\v2-sync signal-acfs.png
+INPUT ..\plots\v2-sync signal-acfs.png
+INPUT ..\plots\v2-sync signal-acfs.png
+INPUT ..\plots\v2-sync signal-acfs.png
+INPUT ..\plots\v2-sync signal-acfs.png
+INPUT ..\plots\v2-lateral acceleration-acfs.png
+INPUT ..\plots\v2-lateral acceleration-acfs.png
+INPUT ..\plots\v2-lateral acceleration-acfs.png
+INPUT ..\plots\v2-lateral acceleration-acfs.png
+INPUT ..\plots\v2-lateral acceleration-acfs.png
+INPUT ..\plots\v2-lateral acceleration-acfs.png
+INPUT ..\plots\v2-lateral acceleration-acfs.png
+INPUT ..\plots\v2-frontal acceleration-acfs.png
+INPUT ..\plots\v2-frontal acceleration-acfs.png
+INPUT ..\plots\v2-frontal acceleration-acfs.png
+INPUT ..\plots\v2-frontal acceleration-acfs.png
+INPUT ..\plots\v2-frontal acceleration-acfs.png
+INPUT ..\plots\v2-frontal acceleration-acfs.png
+INPUT ..\plots\v2-frontal acceleration-acfs.png
+INPUT ..\plots\d4-moment-aacf.png
+INPUT ..\plots\d4-moment-aacf.png
+INPUT ..\plots\d4-moment-aacf.png
+INPUT ..\plots\d4-moment-aacf.png
+INPUT ..\plots\d4-moment-aacf.png
+INPUT ..\plots\d4-moment-aacf.png
+INPUT ..\plots\d4-moment-aacf.png
+INPUT ..\plots\d6-moment-aacf.png
+INPUT ..\plots\d6-moment-aacf.png
+INPUT ..\plots\d6-moment-aacf.png
+INPUT ..\plots\d6-moment-aacf.png
+INPUT ..\plots\d6-moment-aacf.png
+INPUT ..\plots\d6-moment-aacf.png
+INPUT ..\plots\d6-moment-aacf.png
+INPUT ..\plots\d8-moment-aacf.png
+INPUT ..\plots\d8-moment-aacf.png
+INPUT ..\plots\d8-moment-aacf.png
+INPUT ..\plots\d8-moment-aacf.png
+INPUT ..\plots\d8-moment-aacf.png
+INPUT ..\plots\d8-moment-aacf.png
+INPUT ..\plots\d8-moment-aacf.png
+INPUT ..\plots\v2-moment-aacf.png
+INPUT ..\plots\v2-moment-aacf.png
+INPUT ..\plots\v2-moment-aacf.png
+INPUT ..\plots\v2-moment-aacf.png
+INPUT ..\plots\v2-moment-aacf.png
+INPUT ..\plots\v2-moment-aacf.png
+INPUT ..\plots\v2-moment-aacf.png
+INPUT ..\plots\v6-moment-aacf.png
+INPUT ..\plots\v6-moment-aacf.png
+INPUT ..\plots\v6-moment-aacf.png
+INPUT ..\plots\v6-moment-aacf.png
+INPUT ..\plots\v6-moment-aacf.png
+INPUT ..\plots\v6-moment-aacf.png
+INPUT ..\plots\v6-moment-aacf.png
+INPUT ..\plots\v10-moment-aacf.png
+INPUT ..\plots\v10-moment-aacf.png
+INPUT ..\plots\v10-moment-aacf.png
+INPUT ..\plots\v10-moment-aacf.png
+INPUT ..\plots\v10-moment-aacf.png
+INPUT ..\plots\v10-moment-aacf.png
+INPUT ..\plots\v10-moment-aacf.png
+INPUT ..\plots\v17-moment-aacf.png
+INPUT ..\plots\v17-moment-aacf.png
+INPUT ..\plots\v17-moment-aacf.png
+INPUT ..\plots\v17-moment-aacf.png
+INPUT ..\plots\v17-moment-aacf.png
+INPUT ..\plots\v17-moment-aacf.png
+INPUT ..\plots\v17-moment-aacf.png
+INPUT ..\plots\v20-moment-aacf.png
+INPUT ..\plots\v20-moment-aacf.png
+INPUT ..\plots\v20-moment-aacf.png
+INPUT ..\plots\v20-moment-aacf.png
+INPUT ..\plots\v20-moment-aacf.png
+INPUT ..\plots\v20-moment-aacf.png
+INPUT ..\plots\v20-moment-aacf.png
+INPUT ..\plots\v24-moment-aacf.png
+INPUT ..\plots\v24-moment-aacf.png
+INPUT ..\plots\v24-moment-aacf.png
+INPUT ..\plots\v24-moment-aacf.png
+INPUT ..\plots\v24-moment-aacf.png
+INPUT ..\plots\v24-moment-aacf.png
+INPUT ..\plots\v24-moment-aacf.png
+INPUT ..\plots\v25-moment-aacf.png
+INPUT ..\plots\v25-moment-aacf.png
+INPUT ..\plots\v25-moment-aacf.png
+INPUT ..\plots\v25-moment-aacf.png
+INPUT ..\plots\v25-moment-aacf.png
+INPUT ..\plots\v25-moment-aacf.png
+INPUT ..\plots\v25-moment-aacf.png
 INPUT .\main.bbl
 INPUT main.bbl
 INPUT .\main.bbl
 INPUT main.bbl
+INPUT ..\plots\all-force.png
+INPUT ..\plots\all-force.png
+INPUT ..\plots\all-force.png
+INPUT ..\plots\all-force.png
+INPUT ..\plots\all-force.png
+INPUT ..\plots\all-force.png
+INPUT ..\plots\all-force.png
+INPUT ..\plots\all-moment.png
+INPUT ..\plots\all-moment.png
+INPUT ..\plots\all-moment.png
+INPUT ..\plots\all-moment.png
+INPUT ..\plots\all-moment.png
+INPUT ..\plots\all-moment.png
+INPUT ..\plots\all-moment.png
+INPUT ..\plots\all-sync signal.png
+INPUT ..\plots\all-sync signal.png
+INPUT ..\plots\all-sync signal.png
+INPUT ..\plots\all-sync signal.png
+INPUT ..\plots\all-sync signal.png
+INPUT ..\plots\all-sync signal.png
+INPUT ..\plots\all-sync signal.png
+INPUT ..\plots\all-oil acceleration.png
+INPUT ..\plots\all-oil acceleration.png
+INPUT ..\plots\all-oil acceleration.png
+INPUT ..\plots\all-oil acceleration.png
+INPUT ..\plots\all-oil acceleration.png
+INPUT ..\plots\all-oil acceleration.png
+INPUT ..\plots\all-oil acceleration.png
+INPUT ..\plots\all-acoustic.png
+INPUT ..\plots\all-acoustic.png
+INPUT ..\plots\all-acoustic.png
+INPUT ..\plots\all-acoustic.png
+INPUT ..\plots\all-acoustic.png
+INPUT ..\plots\all-acoustic.png
+INPUT ..\plots\all-acoustic.png
+INPUT ..\plots\all-frontal acceleration m.png
+INPUT ..\plots\all-frontal acceleration m.png
+INPUT ..\plots\all-frontal acceleration m.png
+INPUT ..\plots\all-frontal acceleration m.png
+INPUT ..\plots\all-frontal acceleration m.png
+INPUT ..\plots\all-frontal acceleration m.png
+INPUT ..\plots\all-frontal acceleration m.png
+INPUT ..\plots\all-lateral acceleration m.png
+INPUT ..\plots\all-lateral acceleration m.png
+INPUT ..\plots\all-lateral acceleration m.png
+INPUT ..\plots\all-lateral acceleration m.png
+INPUT ..\plots\all-lateral acceleration m.png
+INPUT ..\plots\all-lateral acceleration m.png
+INPUT ..\plots\all-lateral acceleration m.png
 INPUT main.aux
-INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-mathit.enc
+INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-mathex.enc
+INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-ts1.enc
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-mathsy.enc
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
@@ -712,8 +903,14 @@ INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmcsc10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmcsc10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmex10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmex10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmmi10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmmi10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmmi12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmmi12.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmmi8.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmmi8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr17.pfb
