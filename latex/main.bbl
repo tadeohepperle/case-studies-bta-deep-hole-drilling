@@ -1,13 +1,95 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{12}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
+\bibitem[botek Präzisionsbohrtechnik~GmbH(2023)]{botek2023}
+botek Präzisionsbohrtechnik~GmbH.
+\newblock {BTA - System}.
+\newblock \url{https://www.botek.de/en/deep-hole-drilling/bta-system/}, 2023.
+\newblock URL \url{https://www.botek.de/en/deep-hole-drilling/bta-system/}.
+
+\bibitem[Deistler and Scherrer(2022)]{deistler2022time}
+Manfred Deistler and Wolfgang Scherrer.
+\newblock \emph{Time Series Models}, volume 224.
+\newblock Springer Nature, 2022.
+
 \bibitem[Eid et~al.(2017)Eid, Gollwitzer, and Schmitt]{eid2017statistik}
 Michael Eid, Mario Gollwitzer, and Manfred Schmitt.
 \newblock \emph{Statistik und Forschungsmethoden}.
 \newblock Beltz, 2017.
+
+\bibitem[Harris et~al.(2020)Harris, Millman, van~der Walt, Gommers, Virtanen,
+  Cournapeau, Wieser, Taylor, Berg, Smith, Kern, Picus, Hoyer, van Kerkwijk,
+  Brett, Haldane, del R{\'{i}}o, Wiebe, Peterson, G{\'{e}}rard-Marchant,
+  Sheppard, Reddy, Weckesser, Abbasi, Gohlke, and Oliphant]{numpy}
+Charles~R. Harris, K.~Jarrod Millman, St{\'{e}}fan~J. van~der Walt, Ralf
+  Gommers, Pauli Virtanen, David Cournapeau, Eric Wieser, Julian Taylor,
+  Sebastian Berg, Nathaniel~J. Smith, Robert Kern, Matti Picus, Stephan Hoyer,
+  Marten~H. van Kerkwijk, Matthew Brett, Allan Haldane, Jaime~Fern{\'{a}}ndez
+  del R{\'{i}}o, Mark Wiebe, Pearu Peterson, Pierre G{\'{e}}rard-Marchant,
+  Kevin Sheppard, Tyler Reddy, Warren Weckesser, Hameer Abbasi, Christoph
+  Gohlke, and Travis~E. Oliphant.
+\newblock Array programming with {NumPy}.
+\newblock \emph{Nature}, 585\penalty0 (7825):\penalty0 357--362, September
+  2020.
+\newblock \doi{10.1038/s41586-020-2649-2}.
+\newblock URL \url{https://doi.org/10.1038/s41586-020-2649-2}.
+
+\bibitem[Hepperle(Year)]{gx1convert}
+Tadeo Hepperle.
+\newblock gx1convert.
+\newblock \url{https://pypi.org/project/gx1convert/0.1.3/}, Year.
+
+\bibitem[Hunter(2007)]{matplotlib}
+J.~D. Hunter.
+\newblock Matplotlib: A 2d graphics environment.
+\newblock \emph{Computing in Science \& Engineering}, 9\penalty0 (3):\penalty0
+  90--95, 2007.
+\newblock \doi{10.1109/MCSE.2007.55}.
+
+\bibitem[{pola-rs}(2023)]{polars}
+{pola-rs}.
+\newblock polars: A python data manipulation library.
+\newblock \url{https://github.com/pola-rs/polars}, 2023.
+
+\bibitem[Raabe et~al.(2010)Raabe, Enk, Biermann, and Weihs]{raabe2010dynamic}
+Nils Raabe, Dirk Enk, Dirk Biermann, and Claus Weihs.
+\newblock Dynamic disturbances in bta deep-hole drilling: Modelling chatter and
+  spiralling as regenerative effects.
+\newblock In \emph{Advances in Data Analysis, Data Handling and Business
+  Intelligence: Proceedings of the 32nd Annual Conference of the Gesellschaft
+  f{\"u}r Klassifikation eV, Joint Conference with the British Classification
+  Society (BCS) and the Dutch/Flemish Classification Society (VOC),
+  Helmut-Schmidt-University, Hamburg, July 16-18, 2008}, pages 745--754.
+  Springer, 2010.
+
+\bibitem[Smith(accessed <date>)]{SASPWEB2011}
+Julius~O. Smith.
+\newblock \emph{Spectral Audio Signal Processing}.
+\newblock
+  \htmladdnormallink{\texttt{http:}}{http://ccrma.stanford.edu/~jos/sasp/}\texttt{//\-ccrma.stanford.edu/\-\~{}jos/\-sasp/},
+  accessed <date>.
+\newblock online book, 2011 edition.
+
+\bibitem[Theis(2004)]{theis2004modelling}
+Winfried Theis.
+\newblock \emph{Modelling varying amplitudes}.
+\newblock PhD thesis, Universität Dortmund, 2004.
+
+\bibitem[Van~Rossum and Drake(2009)]{python}
+Guido Van~Rossum and Fred~L. Drake.
+\newblock \emph{Python 3 Reference Manual}.
+\newblock CreateSpace, Scotts Valley, CA, 2009.
+\newblock ISBN 1441412697.
+
+\bibitem[Weinert et~al.(2001)Weinert, Webber, H{\"u}sken, and
+  Mehnen]{weinert2001statistics}
+Klaus Weinert, Oliver Webber, M~H{\"u}sken, and Jorn Mehnen.
+\newblock Statistics and time series analyses of bta deep hole drilling.
+\newblock In \emph{International Conference on Non-linear Dynamics in
+  Mechanical Processing}. Citeseer, 2001.
 
 \end{thebibliography}

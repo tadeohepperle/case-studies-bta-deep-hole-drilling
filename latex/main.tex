@@ -22,7 +22,6 @@
 
 \newcommand{\red}{\textcolor{red}}
 
-
 \begin{document}
 
 \begin{titlepage}
@@ -42,7 +41,9 @@
   \vspace{0.5 cm}
   {\Large Group number: 5\par}
   \vspace{0.5 cm}
-  {\Large Group members: Lennard Heinrigs, Tadeo Hepperle, Joshua Oehmen, Vanlal Peka}
+  {\Large Group members: \\
+    Lennard Heinrigs, Tadeo Hepperle, \\
+    Joshua Oehmen, Vanlal Peka}
   \vfill
   {\large \today\par}
 \end{titlepage}
@@ -55,29 +56,45 @@
 
 % todo: explain what variables are present in the data
 
-BTA deep hole drilling is a machining process that differs from traditional boring processes in some ways.
-BTA stands for Boring and Trepanning Association and describes dilling processes in which the hole depth to diameter ratio is particularly large. BTA drilling machines can create holes of a diameter of 7mm up to 700 mm and can achieve a depth to diameter radius of up to 400:1
-% https://unisig.com/information-and-resources/what-is-deep-hole-drilling/what-is-bta-drilling/
-Because the holes are XXXX the boring head needs to be flexible
+BTA deep hole drilling is a machining process that is used to drill deep holes. A deep hole is a hole with a relatively large depth to diameter ratio.
+BTA stands for Boring and Trepanning Association. BTA drilling techniques can be used to create holes with a diameter of 6mm to 1500mm (SOURCE: Tiefbohrverfahren page 6). The material which is processed is typically metal and a depth to diameter ratio of up to 400:1 can be achieved (SOURCE: https://unisig.com/information-and-resources/what-is-deep-hole-drilling/what-is-bta-drilling/). In contrast to other drilling techniques, ususally the workpiece rotates around the drilling head. During the drilling process oil is injected into the drilled hole with high pressure. On the one hand the oil cools down the work piece that is heated up by the boring friction. On the other hand it also sweeps away metal chipping that is removed from the work piece by the BTA boring head.
 
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.7\textwidth]{../images/drillhead.jpg}
+  \caption{Oil flow in a BTA drilling head \citep{botek2023}}
+  \label{fig:drillhead}
+\end{figure}
 
-% explain what is chipping/zerspanung
-% boring head usually self guiding. that is why it is a duynamic progress with distrubances
-% https://en.wikipedia.org/wiki/Deep_hole_drilling
+The yellow arrows in Figure \ref{fig:drillhead} show the flow of oil in the process. Oil returns together with any removed metal chipping through the center of BTA tool.
+To support the BTA tool and reduce unwanted vibrations a damper may be used. In this report we take a look at BTA drilling processes with and without a damper.
+Because the holes in BTA drilling are so deep, the drilling head needs to be quite flexible: A drill that is too stiff could break from torsional forces easily. This flexibility comes at a disadvantage: the drilling head in a BTA machine needs to be self guiding and it is difficult to make sure that the hole is completely straight on such a long drilling path without any deviances at the hole borders.
 
-% How does BTA work?
-% what materials are drilled in?? mainly metal???
-% What is BTA used for?
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.7\textwidth]{../images/chatterspiral.jpg}
+  \caption{Spiraling (left) and Chatter (right) \citep[p.~746]{raabe2010dynamic}}
+  \label{fig:chatterspiral}
+\end{figure}
 
-% How does it differ from traditional drilling?
+The flexible drilling head can develop vibrations which lead to two undesired phenomenons: chatter and spiraling.
+Chatter can be described as "self-excited torsional vibrations" (SOURCE: DYNAMIC DISTURBANCES PAPER page 2). The torsional eigenfrequencies of the drilling tool lead to the edge of the drilling head chipping away material in an uneven way. The effect on the work piece can be seen in the right image in Figure \ref{fig:chatterspiral}. Chatter can be heard acousticly as a sort of humming. According to \citet[p.~14]{theis2004modelling}, chatter is recognizable by the human ear as a "high-pitched tone which occurs
+during the process".
+Spiraling is caused by bending vibrations. The impairment ofthe bore hole can be seen on the left side of  Figure \ref{fig:chatterspiral}. We do not have data on whether or not spiraling occured in the processes we analyze in this report and will thus not make statements about it.
+The main objective of this report is to find a good predictor of chatter and develop an early warning system to allow the BTA machine to be turned off before chatter causes too much damage to the work piece.
 
-% We got measured data of XXX boring processes and want to see if we can predict chatter before onset.
-% Goal: detect the onset of chattering before it happens.
+\subsection{Prior Research}
+
+We now talk briefly about prior approaches that have been taken to detect chatter. \citet{raabe2010dynamic} propose to model chatter as a regenerative process. They run a chatter simulation that constantly updates the angle of the BTA tool, the cutting thickness and the drilling torque. They found that their physical model produces chatter similar to chatter in real world drilling processes regarding the drilling torque \citep[p.~748]{raabe2010dynamic}.
+\citet{weinert2001statistics} also experimented with predicting chatter in BTA processes. They found that the drilling torque is one of the most expressive signals for chatter detection. The other variables they looked at were force, acceleration in 3 directions and acoustic signals. Even though chatter can be recognized by pronounced frequencies on the acoustic channel, loud noise of other machinery in the factory makes it impractictical \citep[p.~6]{weinert2001statistics}. They found that the autocorrelation function for the drilling torque differs significantly between \emph{chatter} and \emph{non-chatter} segments of the BTA process.
+To predict chatter, an absolute sum of the ACF function ($A_{ACF}$-value) over 30 lags was used. When this value crossed a certain threshold a couple of times, it was a strong indicator of chatter appearing soon after. To find the best decision rule based on the $A_{ACF}$ a neural network was used.
+\citet[p.~27]{theis2004modelling} also found that the drilling torque is an important predictor of chatter and has shown that the spectrograms of the torque variable differ significanty between \emph{chatter} and \emph{non-chatter} time regions of the BTA process.
+Because of these findings we also expect the drilling torque (\emph{moment} variable) to be of great use for chatter detection in this report.
 
 \subsection{The Data}
 
 To answer the question what causes chatter in BTA boring processes we take a look at data from 10 BTA drilling runs in this report.
-As shown in Table \ref{tab:run_metadata}, each process has its own identifier (e.g. \emph{D4}), by which we refer to a process.
+As shown in Table \ref{tab:parameters}, each process has its own identifier (e.g. \emph{D4}), by which we refer to a process.
 We refer to the processes \emph{D4}, \emph{D6} and \emph{D8} as \emph{D}-processes, while \emph{V2}, \emph{V6}, \emph{V10}, \emph{V17}, \emph{V20}, \emph{V24} and \emph{V25} are called \emph{V}-processes.
 The \emph{D}-processes were recorded in 2002 and featured a damper installed 1240 mm away from clamping. In contrast to that the \emph{V}-processes were recorded in 2001 and did not use any damper in the BTA machine setup. It seems like the \emph{D}-processes do not show signs of chatter, while we can observe some form of chatter in all \emph{V}-processes.
 
@@ -85,7 +102,7 @@ The \emph{D}-processes were recorded in 2002 and featured a damper installed 124
 \begin{table}[ht]
   \centering
   \captionabove{Drilling Processes and their Metadata}
-  \label{tab:causes}
+  \label{tab:parameters}
   \begin{tabular}{r|rrrr}
     \emph{identifier} & \emph{time} & \emph{cutting speed} & \emph{feed speed} & \emph{oil pressure} \\
     \hline
@@ -102,7 +119,7 @@ The \emph{D}-processes were recorded in 2002 and featured a damper installed 124
   \end{tabular}
 \end{table}
 
-There are a few parameters that are chosen in advance for each drilling process: \emph{cutting speed}, \emph{feed speed} and \emph{oil pressure}. Table \ref{tab:run_metadata} shows these parameters for the 10 processes.
+There are a few parameters that are chosen in advance for each drilling process: \emph{cutting speed}, \emph{feed speed} and \emph{oil pressure}. Table \ref{tab:parameters} shows these parameters for the 10 processes.
 The data for each of the 10 processes consists of a time series recording of several variables.
 The time series data was recorded with a sampling rate of 20000Hz, so in each second of the boring process, 20000 observations of each of the measured variables have been recorded. That means there is no missing data and a consistent time gap of 0.05 ms between measurements. The time span of the drilling processes ranges from 3:54 min to 4:58 min.
 The data was recorded utilizing the \emph{TEAC GX-1 Integrated Recorder} device, a machine developed by the \emph{TEAC} electronics company. The distribution of the device has been discontinued (SOURCE: https://daqlogsystems.co.uk/product/teac-gx-1/). The machine features a set of up to 8 input channels that can be fed with analog data.
@@ -112,7 +129,7 @@ The associated coefficients to convert the physical value to an integer value an
 The following variables were measured for all 10 processes:
 \begin{itemize}
   \item \emph{acoustic} - the audio signal in Pa (Pascal), noise and sound during the drilling process
-  \item \emph{moment} - the torsianal moment in Nm (Newtonmeter), also known as drilling torque. Measured at the drilling bar above the bore hole of the BTA drilling machine. It is created by forces of chipping, friction and deformation at the guide rails.
+  \item \emph{moment} - the torsional moment in Nm (Newtonmeter), also known as drilling torque. Measured at the drilling bar above the bore hole of the BTA drilling machine. It is created by forces of chipping, friction and deformation at the guide rails.
   \item \emph{sync signal} - an electric signal that is triggered by the drilling head having a certain axial rotation. It flows once per revolution of the drilling head for a brief moment.
   \item \emph{oil acceleration} - the acceleration of the drilling oil supply in $m/s^2$
   \item \emph{force} - the force in feed direction in N (Newton). It is related to the \emph{feed speed} but also to the resistance (hardness) the work piece material has against being drilled
@@ -136,32 +153,22 @@ The data we received is unlabeled. That means we just have the time series of th
 The time segments appear in each process in this order, sometimes skipping the \emph{chatter} and \emph{low chatter} stages.
 The main focus of this report is to detect the change from \emph{no chatter} to \emph{chatter} with some procedure that would work online only with data from \textbf{before} the \emph{chatter} stage is entered.
 
-
-
-\subsection{Prior Research}
-
-% What attempts have been made in research to model these time series??
-
-% just audio does not work well (WHO said tha XXXXXX)
-% - neural networks
-% - area under ACF and KOlgomerov smirnov
-% - frequency based????
-
-% how did WE do it?? What methods did we use???
-
-% what variables are important? What does prior research indicate?
-
 \section{Methods}
 
-This chapter briefly explains the statistical methods used. to apply them we use Python \citep{python} as statistical software. The Python packages numpy \citep{numpy}, pandas \citep{pandas}, matplotlib \citep{matplotlib} and mlxtend \citep{mlxtend} have been used. In addition we developed a custom python package called \emph{gx1convert} \citep{gx1convert} that was used to read in the data produced by the GX-1 device.
+This chapter briefly explains the statistical methods used. to apply them we use Python \citep{python} as statistical software. The Python packages numpy \citep{numpy}, polars \citep{polars} and matplotlib \citep{matplotlib} have been used. In addition to these, we developed a custom python package called \emph{gx1convert} \citep{gx1convert} that was used to read in the header and binary data produced by the GX-1 device \citep{gx1convert}.
 
-% For reading the data, I developed a package that can read any gx1 time series. Availbale here: XXXXX
-% python was used for all data analysis. These packages:  TAKE FROM REPORT 1
+\subsection{Short-time Fourier Transform (STFT)}
 
-\subsection{Power Spectrum}
+Short-time Fourier Transform (STFT) is a signal processing method that can be applied to a time series, to translate it from the time domain into a the frequency domain. Consider a discrete real valued discrete time series $X_t$. The STFT is defined as a function $\mathbb{R} \rightarrow \mathbb{C}$, mapping each $X_t$ time point to a function $Y_t(\omega)$ that maps an angular frequency to a complex number. This complex number $z$ can be written in its Euler representation $r e^{i \phi}$. We will discuss shortly how to interpret it. $Y_t(\omega)$ can be calculated with the following formula \citep{SASPWEB2011}:
 
-% Fourrier transform????
+\[ Y_t(\omega) = \sum_{t=-\infty}^{\infty}{X_t w(n-m) e^{-j \omega t}}  \]
 
+In this formula, $w(t)$ represents a window function that is shifted over all possible values of $t$ by an offset of $m$. A window function is a function that takes values between 0 and 1 in some range and returns 0 outside of that range. For the sake of simplicity, this can be thought of as a simple rectangular window, that returns 1 within a fixed range and 0 otherwise. In practice any window function can be used. Let $z = r e^{i \phi}$ be the complex number that we get, when evaluating $Y_t(\omega)$ for some $\omega$ and a fixed point in time $t$. Then $r$ and $\phi$ represent the amplitude and phase of a sin wave with angular frequency $\omega$ at the time point $t$. The angular frequency $\omega$ can be converted to an actual frequency $f$ of our time series in Hz by $f = \omega \frac{s}{2 \pi}$, where $s$ is the sampling frequency of the time series in Hz. Likewise if we want to know the STFT in a time point $t$ for any frequency $f$, we can use $\omega = f \frac{2 \pi}{s}$ to calculate the corresponding radial frequency $\omega$ to pass to the $Y_t(\omega)$ function to obtain amplitude and phase.
+
+The short-time Fourier transform can be used to represent the dominant frequencies of a time series over time with a spectrogram.
+A spectrogram can be plotted as a heatmap with the time $t$ on the x-axis, the frequency $f$ at the y-axis and the spectrogram value $S_{tf}$ represented by a color on a color spectrum.
+The spectrogram value $S_{tf}$ for a time point $t$ and a frequnecy $f$ is defined as the squared magnitude of the STFT $|Y_t(\omega)|^2 = |Y_t(f \frac{2 \pi}{s})|^2$.
+It can be used to visualize how a frequency distribution in a time series behaves over time.
 
 \subsection{Covariance and Correlation}
 
@@ -177,25 +184,22 @@ Because the covariance greatly depends on the units of measurement, it can be st
 The result $r_{XY}$ is known as Pearson's r or Pearson product-moment correlation coefficient. Note that $r_{XY}$ is symmetrical, so $r_{XY} = r_{YX}$ and in case that either $s_X$ or $s_Y$ is zero it is not defined. It is a standardized measure of linear correlation between two metric variables \citep[p.~538]{eid2017statistik}. A correlation of $r_{XY} = 1$ means perfect correlation.
 
 
-\subsection{Auto-Correlation Function (ACF)}
+\subsection{Auto-correlation Function (ACF)}
 
-The auto-correlation function (ACF) shows how much a time series is correlated with a lagged version of itself. For a Time series $X_t$ consisting of $n$ data points $x_1, ..., x_n$ the ACF is defined as a function $\rho(k)$ that maps an integer $k$ to the correlation of $X_t$ with $X_{t+1}$ (SOURCE XXX TIME SERIES BOOK PAGE 4):
+The auto-correlation function (ACF) shows how much a time series is correlated with a lagged version of itself. For a Time series $X_t$ consisting of $n$ data points $x_1, ..., x_n$ the ACF is defined as a function $\rho(k)$ that maps an integer $k$ to the correlation of $X_t$ with $X_{t+1}$ \citep[p.~4]{deistler2022time}:
 
 \[ \rho(k) = Corr(X_t, X_{t+1}) \]
 
 In this equation, $k$ represents a lag value. In time series analysis we call a "lag", a shift of the time series along the temporal direction. The correlation is calculated over all possible values of $t$ where $1 \le t \le n - k$.For example for values $t = 3$ and $k = 2$, the variable $X_t$ would refer to the data point $x_3$ and $X_t$ would be $x_5$. From the equation follows that $\rho(0)$ is always 1, because $\rho(0) = Corr(X_t, X_t) = 1$. Because the ACF for higher lag values has less data point pairs available for correlation calculation, one should only calculate the ACF for lag values much less than the length of the time series itself.
-Interpreting the ACF only makes sense if the underlying process is (weakly) stationary (SOURCE XXX TIME SERIES PAGE 4). This should be given if we look at regions of a drilling process where mean and variance do not change too much. Periodicities in a time series also show as periodic patterns in the ACF.
-
-% relationship between acf AND SFT
+Interpreting the ACF only makes sense if the underlying process is (weakly) stationary \citep[p.~4]{deistler2022time}. This should be given if we look at regions of a drilling process where mean and variance do not change too much. Periodicities in a time series also show as periodic patterns in the ACF.
 
 \subsubsection{Absolute Area under the ACF ($A_{ACF}$)}
 
-XXX mention, that they used the ACF in a strategy to detect chatter in BTA drilling processes. Because the ACF carries information about periodic correlations in the time series, it should contain information of chatter. They selected a range of L lags $k \in \{0, ..., L\}$ and calculated the ACF $\rho(k)$ for each lag value. Then they summed up the absolute value.
+\citet{weinert2001statistics} derived a value called $A_{ACF}$ from the auto-correlation function. They selected a range of L lags $k \in \{0, ..., L\}$ and calculated the ACF $\rho(k)$ for each lag value. Then they summed up the absolute value for each lag to obtain the $A_{ACF}$.
 
 \[ A_{ACF} = \sum^{L}_{h=0}{|p(h)|} \]
 
-XXX chose a value of L=30 in their approach and calculated this $A_{ACF}$ value for small chunks of time cut out of the original time series.
-If there are strong resonating frequencies in the data, the $A_{ACF}$ value is expected to be higher.
+\citet{weinert2001statistics} chose a value of L=30 in their approach and calculated this $A_{ACF}$ value for small chunks of time cut out of the original time series. If there are strong resonating frequencies in the data (such as present during chatter), the $A_{ACF}$ value is expected to be high.
 
 \section{Data Analysis}
 
@@ -222,7 +226,7 @@ We manually labeled each process as into segments as described in section \ref{l
 \end{table}
 
 The end point of the \emph{start} segment and the start point of the \emph{end} segment were best identified by looking at the \emph{force} time series for each process. The force quickly increases in abolute value when the BTA drilling head makes contact with the workpiece and falls when it is released, as visible in Figure \ref{fig:all-force}.
-We also plotted the time series for \emph{moment}, \emph{sync signal}, \emph{oil acceleration} and \emph{acoustic} for all processes together with the time segements. They can be found in Figure \ref{all-moment} to Figure \ref{all-acoustic} in the Appendix. For the \emph{V}-processes Figure \ref{fig:all-frontal} and Figure \ref{fig:all-lateral} show the frontal and lateral acceleration respectively. The reason for plotting all of these variables in conjuction with the time segments is, that it helps us identify which variables show a visible difference between the chatter and non-chatter regions. It looks like only the \emph{acoustic} signal and the \emph{moment} and \emph{oil acceleration} show visible differences.
+We also plotted the time series for \emph{moment}, \emph{sync signal}, \emph{oil acceleration} and \emph{acoustic} for all processes together with the time segements. They can be found in Figure \ref{fig:all-moment} to Figure \ref{fig:all-acoustic} in the Appendix. For the \emph{V}-processes Figure \ref{fig:all-frontal} and Figure \ref{fig:all-lateral} show the frontal and lateral acceleration respectively. The reason for plotting all of these variables in conjuction with the time segments is, that it helps us identify which variables show a visible difference between the chatter and non-chatter regions. It looks like only the \emph{acoustic} signal and the \emph{moment} and \emph{oil acceleration} show visible differences.
 
 \subsection{Frequencies and ACF}
 
@@ -310,7 +314,7 @@ Figure \ref{fig:v2-acoustic-acfs} and  Figure \ref{fig:v2-force-acfs} shows that
 \subsection{Detect chatter with $A_{ACF}$}
 
 We now split the time series into chunks with a width of 1000 data points. That is the equivalent of 50ms for each chunk. For each of these chunks we calculate the ACF up to lag 100.
-Using a similar approach as XXX(Statistics and Time Series Analyses of...)XXX we reduce these 101 coefficients down to an $A_{ACF}$ value that represents the absolute area under the autocorrelation function $A_{ACF} = \sum^{L}_{h=0}{|p(h)|}$.
+Using a similar approach as \citet{deistler2022time} we reduce these 101 coefficients down to an $A_{ACF}$ value that represents the absolute area under the autocorrelation function $A_{ACF} = \sum^{L}_{h=0}{|p(h)|}$.
 Here $p(h)$ is the autocorrelation at lag $h$ calculated on the respective 1000-point chunk. Using this approach the \emph{non-chatter} segments had between 320 and 3800 chunks and the \emph{chatter} segments we composed of 200 to 2840 chunks each. Table \ref{tab:aacfstats} shows for each of the processes the average $A_{ACF}$ values in the \emph{chatter} and \emph{non-chatter} regions.
 
 \begin{table}[ht]
@@ -455,13 +459,16 @@ Table \ref{tab:pointdiff} shows when the threshold of $A_{ACF} = 50$ is surpasse
   \end{tabular}
 \end{table}
 
-Out of the 7 processes, 6 were able to locate the start of chatter within a tolerance window of 1 seconds. Only process \emph{V25} gave a very early alarm (See \ref{fig:v25-moment-aacf}).
-It is important to note that the exact value and sign of the difference should not be overinterpreted, as long as it is in the subsecond range. This is because the beginning and end time points of \emph{chatter} and \emph{non-chatter} regions were determined manually by listening to the audio signal. It is hard to tell the \emph{exact} point in time when chatter starts.
-We do not want to investigate the \emph{low chatter} regions that were determined by the same method. The objective of this report is, to find out how to predict the start of the chatter. Splitting chatter into \emph{chatter} and \emph{low chatter} was only done to have more uniform time segments to analyze.
+Out of the 7 processes, 6 were able to locate the start of chatter within a tolerance window of 1 seconds. Only process \emph{V25} gave a very early alarm (See \ref{fig:v25-moment-aacf}). The \emph{D}-processes which used a damper, never show $A_{ACF}$ values greater than 50, so the system does not seem to give false alarms if no chatter occurs at all.
+It is important to note that the exact value and sign of the difference should not be overinterpreted, as long as it is in the subsecond range. This is because the beginning and end time points of \emph{chatter} and \emph{non-chatter} regions were determined manually by listening to the audio signal. It is hard to tell the \emph{exact} point in time when chatter starts. We do not want to investigate the \emph{low chatter} regions that were determined by the same method. The objective of this report is, to find out how to predict the start of the chatter. Splitting chatter into \emph{chatter} and \emph{low chatter} was only done to have more uniform time segments to analyze.
+The \emph{cutting speed}, \emph{feed speed} and \emph{oil pressure} parameters do not seem to differ much between the \emph{D}-processes (no chatter) and \emph{V}-processes we have data for.
 
 \section{Summary and Discussion}
 
-% this is too little data to do much. Also variables different between data.
+The quality and usefulness of our findings is hard to gauge because we determined the labels (\emph{chatter} regions) on our own. Having hard labels for chatter and spiraling in the data would have been better for our analysis. We were able to show that out of all the variables, \emph{moment} (drilling torque) showed the strongest difference between \emph{chatter} and \emph{non-chatter} regions. It is likely the best predictor variable for chatter as already found by \citet{deistler2022time} and \citep[p.~27]{theis2004modelling}.
+In total, our analysis was not able to prove predictive power of the \emph{moment} variable. The $A_{ACF}$ indicator was able to give good indications of the start of chatter in most cases. However it did not show any signs of chatter approaching in the seconds before the chatter was already there. Maybe it is enough though to stop the BTA machine as soon as the first signs of chatter appear. Using the drilling torque approach we presented, could however be a valuable alternative to listening to the acoustic signal manually in environments where there are a lot of acoustic disturbances. One point of contention in our approach could be the choice
+In addition to monitoring the \emph{moment} variable, using a damper is probably the best measure that can be taken to avoid chatter all together. We are not sure about what disadvantages a damper could have for the drilling process. If we had more data, other approaches could be taken to predict chatte and stop the machine early. Having only 7 samples of drilling processes that show chatter in the data, is also not enough to perform statistical testing, as most statistical tests require at least 30 samples. A Recurrent neural network that is fed the different variables in the time or frequency domain might be able to learn patterns that predict chatter. But we do not have enough data to test this approach.
+It would also be interesting to see if the $A_{ACF}$ approach we chose in this report could also work for different work piece materials and BTA tool diameters.
 
 \newpage
 \addcontentsline{toc}{section}{Bibliography}
@@ -472,9 +479,6 @@ We do not want to investigate the \emph{low chatter} regions that were determine
 \appendix
 \addsec{Appendix}
 \subsection*{A \ Additional figures}
-
-
-
 
 \begin{figure}[p]
   \vspace*{-1cm}
