@@ -1,4 +1,4 @@
-\begin{thebibliography}{12}
+\begin{thebibliography}{15}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -10,6 +10,12 @@ botek Präzisionsbohrtechnik~GmbH.
 \newblock {BTA - System}.
 \newblock \url{https://www.botek.de/en/deep-hole-drilling/bta-system/}, 2023.
 \newblock URL \url{https://www.botek.de/en/deep-hole-drilling/bta-system/}.
+
+\bibitem[{DAQLOG Systems Ltd}(2023)]{DAQLOGTEAC}
+{DAQLOG Systems Ltd}.
+\newblock {TEAC GX-1}.
+\newblock \url{https://daqlogsystems.co.uk/product/teac-gx-1/}, 2023.
+\newblock Accessed: 2023-07-26.
 
 \bibitem[Deistler and Scherrer(2022)]{deistler2022time}
 Manfred Deistler and Wolfgang Scherrer.
@@ -69,9 +75,7 @@ Nils Raabe, Dirk Enk, Dirk Biermann, and Claus Weihs.
 \bibitem[Smith(accessed <date>)]{SASPWEB2011}
 Julius~O. Smith.
 \newblock \emph{Spectral Audio Signal Processing}.
-\newblock
-  \htmladdnormallink{\texttt{http:}}{http://ccrma.stanford.edu/~jos/sasp/}\texttt{//\-ccrma.stanford.edu/\-\~{}jos/\-sasp/},
-  accessed <date>.
+\newblock http://ccrma.stanford.edu/~jos/sasp/, accessed <date>.
 \newblock online book, 2011 edition.
 
 \bibitem[Theis(2004)]{theis2004modelling}
@@ -79,11 +83,24 @@ Winfried Theis.
 \newblock \emph{Modelling varying amplitudes}.
 \newblock PhD thesis, Universität Dortmund, 2004.
 
+\bibitem[{UNISIG GmbH}(2023)]{UNISIGBTA}
+{UNISIG GmbH}.
+\newblock What is bta drilling - unisig deep hole drilling machines.
+\newblock
+  \url{https://unisig.com/information-and-resources/what-is-deep-hole-drilling/what-is-bta-drilling/},
+  2023.
+\newblock Accessed: 2023-07-26.
+
 \bibitem[Van~Rossum and Drake(2009)]{python}
 Guido Van~Rossum and Fred~L. Drake.
 \newblock \emph{Python 3 Reference Manual}.
 \newblock CreateSpace, Scotts Valley, CA, 2009.
 \newblock ISBN 1441412697.
+
+\bibitem[{VDI-Richtlinie 3210}(1996)]{Tiefbohrverfahren}
+{VDI-Richtlinie 3210}.
+\newblock Tiefbohrverfahren.
+\newblock Technical report, Beuth-Verlag, Berlin, 1996.
 
 \bibitem[Weinert et~al.(2001)Weinert, Webber, H{\"u}sken, and
   Mehnen]{weinert2001statistics}

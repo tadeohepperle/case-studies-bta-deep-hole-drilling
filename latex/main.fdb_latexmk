@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex main"] 0 "main.aux" "main.bbl" "main" 0
+["bibtex main"] 1690398361 "main.aux" "main.bbl" "main" 1690398758
   "C:/Program Files/MiKTeX/bibtex/bst/natbib/plainnat.bst" 1284455456 26816 ffe5423d2019860bad9f54bc402fac15 ""
-  "main.aux" 0 -1 0 "pdflatex"
-  "references.bib" 1690397286 4615 ea99f17dbabfb954b48e08b7f124e8d6 ""
+  "main.aux" 1690398758 10786 36e6b8bfc380637645b97ca6eb2f212e "pdflatex"
+  "references.bib" 1690398330 5373 8f1843c6f40f071f4b09082fa03e9dab ""
   (generated)
-  "main.blg"
   "main.bbl"
-["pdflatex"] 1690397445 "t:/Daten/Studium Msc Data Science/Semester IV/Case Studies/Project2/code/latex/main.tex" "main.pdf" "main" 1690397445
+  "main.blg"
+["pdflatex"] 1690398753 "t:/Daten/Studium Msc Data Science/Semester IV/Case Studies/Project2/code/latex/main.tex" "main.pdf" "main" 1690398758
   "../images/chatterspiral.jpg" 1690386906 86519 b2038fe4575cd448a6e6419393bae0cf ""
   "../images/drillhead.jpg" 1690385913 176243 6d33dc88bc308a757bc7f6f326c697e9 ""
   "../plots/all-acoustic.png" 1690131928 263275 d118b7b72dff305cde7969dbc34cc2e6 ""
@@ -166,13 +166,13 @@
   "C:/Program Files/MiKTeX/tex/latex/xpatch/xpatch.sty" 1585224860 8510 7803f78066c4f9d008405191a4b43073 ""
   "C:/Users/tadeo/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1635890083 9705527 7593b605117244c7e3d8262e79a129e8 ""
   "C:/Users/tadeo/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1635890049 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
-  "main.aux" 1690397445 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "main.bbl" 1690397439 4216 cd2bf8ddf0a4e85e856ca84d811bb1c1 "bibtex main"
-  "main.tex" 1690397432 41162 e28bd2744a0c920fef8c833ec2a25671 ""
-  "main.toc" 0 -1 0 "pdflatex"
-  "t:/Daten/Studium Msc Data Science/Semester IV/Case Studies/Project2/code/latex/main.tex" 1690397432 41162 e28bd2744a0c920fef8c833ec2a25671 ""
+  "main.aux" 1690398758 10786 36e6b8bfc380637645b97ca6eb2f212e "pdflatex"
+  "main.bbl" 1690398361 4786 b67ab0c283cb415a6e109ee23463106c "bibtex main"
+  "main.tex" 1690398752 40967 5443efe6d8646ba455f462f924bb4960 ""
+  "main.toc" 1690398758 1201 0914cf974cd46ff2dd7998757e9b8042 "pdflatex"
+  "t:/Daten/Studium Msc Data Science/Semester IV/Case Studies/Project2/code/latex/main.tex" 1690398752 40967 5443efe6d8646ba455f462f924bb4960 ""
   (generated)
-  "main.toc"
-  "main.pdf"
   "main.aux"
+  "main.toc"
   "main.log"
+  "main.pdf"

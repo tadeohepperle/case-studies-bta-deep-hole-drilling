@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.11.2)  26 JUL 2023 20:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.11.2)  26 JUL 2023 21:13
 entering extended mode
 **"t:/Daten/Studium Msc Data Science/Semester IV/Case Studies/Project2/code/latex/main.tex"
 (t:/Daten/Studium Msc Data Science/Semester IV/Case Studies/Project2/code/latex/main.tex
@@ -465,332 +465,157 @@ File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 51.
  (C:\Program Files\MiKTeX\tex/latex/lm\t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-No file main.toc.
-\tf@toc=\write3
-\openout3 = `main.toc'.
-
-[2]
-Overfull \hbox (15.2304pt too wide) in paragraph at lines 59--61
-\T1/lmr/m/n/12 is-deep-hole-drilling/what-is-bta-drilling/). In con-trast to other drilling tech-niques, ususally
- []
-
-<../images/drillhead.jpg, id=13, 458.1918pt x 232.7094pt>
-File: ../images/drillhead.jpg Graphic file (type jpg)
-<use ../images/drillhead.jpg>
-Package pdftex.def Info: ../images/drillhead.jpg  used on input line 64.
-(pdftex.def)             Requested size: 313.69029pt x 159.31975pt.
-
-Package natbib Warning: Citation `botek2023' on page 3 undefined on input line 65.
-
-
-Package natbib Warning: Citation `botek2023' on page 3 undefined on input line 65.
-
-
-LaTeX Warning: Reference `fig:drillhead' on page 3 undefined on input line 69.
-
-<../images/chatterspiral.jpg, id=14, 371.4678pt x 102.6234pt>
-File: ../images/chatterspiral.jpg Graphic file (type jpg)
-<use ../images/chatterspiral.jpg>
-Package pdftex.def Info: ../images/chatterspiral.jpg  used on input line 75.
-(pdftex.def)             Requested size: 313.69029pt x 86.66812pt.
-
-Package natbib Warning: Citation `raabe2010dynamic' on page 3 undefined on input line 76.
-
-
-Package natbib Warning: Citation `raabe2010dynamic' on page 3 undefined on input line 76.
-
-
-LaTeX Warning: Reference `fig:chatterspiral' on page 3 undefined on input line 81.
-
-
-Package natbib Warning: Citation `theis2004modelling' on page 3 undefined on input line 81.
-
-
-LaTeX Warning: Reference `fig:chatterspiral' on page 3 undefined on input line 83.
-
-[3
-
- <../images/drillhead.jpg>]
-
-Package natbib Warning: Citation `raabe2010dynamic' on page 4 undefined on input line 88.
-
-
-Package natbib Warning: Citation `raabe2010dynamic' on page 4 undefined on input line 88.
-
-
-Package natbib Warning: Citation `weinert2001statistics' on page 4 undefined on input line 89.
-
-
-Package natbib Warning: Citation `weinert2001statistics' on page 4 undefined on input line 89.
-
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 90.
-(C:\Program Files\MiKTeX\tex/latex/lm\ot1lmr.fd
+) (main.toc
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3.
+ (C:\Program Files\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 90.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3.
  (C:\Program Files\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 90.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 3.
  (C:\Program Files\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 90.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 3.
  (C:\Program Files\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 90.
+(Font)              <12> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 90.
+(Font)              <8> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 90.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 90.
+(Font)              <6> on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 90.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
+))
+\tf@toc=\write3
+\openout3 = `main.toc'.
 
-Package natbib Warning: Citation `theis2004modelling' on page 4 undefined on input line 91.
+ [2]
+<../images/drillhead.jpg, id=15, 458.1918pt x 232.7094pt>
+File: ../images/drillhead.jpg Graphic file (type jpg)
+<use ../images/drillhead.jpg>
+Package pdftex.def Info: ../images/drillhead.jpg  used on input line 62.
+(pdftex.def)             Requested size: 313.69029pt x 159.31975pt.
+<../images/chatterspiral.jpg, id=16, 371.4678pt x 102.6234pt>
+File: ../images/chatterspiral.jpg Graphic file (type jpg)
+<use ../images/chatterspiral.jpg>
+Package pdftex.def Info: ../images/chatterspiral.jpg  used on input line 73.
+(pdftex.def)             Requested size: 313.69029pt x 86.66812pt.
+ [3
 
-[4 <../images/chatterspiral.jpg>]
-
-LaTeX Warning: Reference `tab:parameters' on page 5 undefined on input line 97.
-
-
-LaTeX Warning: Reference `tab:parameters' on page 5 undefined on input line 122.
-
-[5]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 131.
+ <../images/drillhead.jpg>] [4 <../images/chatterspiral.jpg>] [5]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 128.
  (C:\Program Files\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [6]
-
-Package natbib Warning: Citation `python' on page 7 undefined on input line 158.
-
-
-Package natbib Warning: Citation `numpy' on page 7 undefined on input line 158.
-
-
-Package natbib Warning: Citation `polars' on page 7 undefined on input line 158.
-
-
-Package natbib Warning: Citation `matplotlib' on page 7 undefined on input line 158.
-
-
-Package natbib Warning: Citation `gx1convert' on page 7 undefined on input line 158.
-
-
-Package natbib Warning: Citation `gx1convert' on page 7 undefined on input line 158.
-
-
-Package natbib Warning: Citation `SASPWEB2011' on page 7 undefined on input line 162.
-
-[7] [8]
-
-Package natbib Warning: Citation `eid2017statistik' on page 9 undefined on input line 184.
-
-
-Package natbib Warning: Citation `deistler2022time' on page 9 undefined on input line 189.
-
-
-Package natbib Warning: Citation `deistler2022time' on page 9 undefined on input line 194.
-
-
-Package natbib Warning: Citation `weinert2001statistics' on page 9 undefined on input line 198.
-
-[9]
-
-Package natbib Warning: Citation `weinert2001statistics' on page 10 undefined on input line 202.
-
-
-LaTeX Warning: Reference `labels' on page 10 undefined on input line 206.
-
-
-LaTeX Warning: Reference `tab:segmenttime' on page 10 undefined on input line 206.
-
-
-LaTeX Warning: Reference `fig:all-force' on page 10 undefined on input line 228.
-
-
-LaTeX Warning: Reference `fig:all-moment' on page 10 undefined on input line 229.
-
-
-LaTeX Warning: Reference `fig:all-acoustic' on page 10 undefined on input line 229.
-
-
-LaTeX Warning: Reference `fig:all-frontal' on page 10 undefined on input line 229.
-
-
-LaTeX Warning: Reference `fig:all-lateral' on page 10 undefined on input line 229.
-
-[10]
-
-LaTeX Warning: Reference `fig:v2-spec' on page 11 undefined on input line 233.
-
+) [6] [7] [8] [9] [10]
 <../plots/v2-spec.png, id=50, 867.24pt x 867.24pt>
 File: ../plots/v2-spec.png Graphic file (type png)
 <use ../plots/v2-spec.png>
-Package pdftex.def Info: ../plots/v2-spec.png  used on input line 239.
+Package pdftex.def Info: ../plots/v2-spec.png  used on input line 236.
 (pdftex.def)             Requested size: 403.31511pt x 403.31537pt.
 <../plots/v2-moment-acfs.png, id=52, 867.24pt x 361.35pt>
 File: ../plots/v2-moment-acfs.png Graphic file (type png)
 <use ../plots/v2-moment-acfs.png>
-Package pdftex.def Info: ../plots/v2-moment-acfs.png  used on input line 249.
+Package pdftex.def Info: ../plots/v2-moment-acfs.png  used on input line 246.
 (pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
 <../plots/v2-oil acceleration-acfs.png, id=53, 867.24pt x 361.35pt>
 File: ../plots/v2-oil acceleration-acfs.png Graphic file (type png)
 <use ../plots/v2-oil acceleration-acfs.png>
-Package pdftex.def Info: ../plots/v2-oil acceleration-acfs.png  used on input line 258.
+Package pdftex.def Info: ../plots/v2-oil acceleration-acfs.png  used on input line 255.
 (pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
-
-LaTeX Warning: Reference `fig:v2-moment-acfs' on page 11 undefined on input line 264.
-
-
-LaTeX Warning: Reference `fig:v2-oil-acfs' on page 11 undefined on input line 264.
-
-
-LaTeX Warning: Reference `fig:v2-spec' on page 11 undefined on input line 264.
-
 <../plots/v2-force-acfs.png, id=54, 867.24pt x 361.35pt>
 File: ../plots/v2-force-acfs.png Graphic file (type png)
 <use ../plots/v2-force-acfs.png>
-Package pdftex.def Info: ../plots/v2-force-acfs.png  used on input line 270.
+Package pdftex.def Info: ../plots/v2-force-acfs.png  used on input line 267.
 (pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
 <../plots/v2-acoustic-acfs.png, id=55, 867.24pt x 361.35pt>
 File: ../plots/v2-acoustic-acfs.png Graphic file (type png)
 <use ../plots/v2-acoustic-acfs.png>
-Package pdftex.def Info: ../plots/v2-acoustic-acfs.png  used on input line 279.
+Package pdftex.def Info: ../plots/v2-acoustic-acfs.png  used on input line 276.
 (pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
-
-LaTeX Warning: Reference `fig:v2-acoustic-acfs' on page 11 undefined on input line 284.
-
-
-LaTeX Warning: Reference `fig:v2-force-acfs' on page 11 undefined on input line 284.
-
-
-LaTeX Warning: Reference `fig:v2-sync-acfs' on page 11 undefined on input line 285.
-
-
-LaTeX Warning: Reference `fig:v2-lateral-acfs' on page 11 undefined on input line 285.
-
-
-LaTeX Warning: Reference `fig:v2-frontal-acfs' on page 11 undefined on input line 285.
-
-<../plots/v2-sync signal-acfs.png, id=56, 867.24pt x 361.35pt>
+ [11] [12 <../plots/v2-spec.png> <../plots/v2-moment-acfs.png>] [13 <../plots/v2-oil acceleration-acfs.png> <../plots/v2-force-acfs.png> <../plots/v2-acoustic-acfs.png>]
+<../plots/v2-sync signal-acfs.png, id=71, 867.24pt x 361.35pt>
 File: ../plots/v2-sync signal-acfs.png Graphic file (type png)
 <use ../plots/v2-sync signal-acfs.png>
-Package pdftex.def Info: ../plots/v2-sync signal-acfs.png  used on input line 291.
+Package pdftex.def Info: ../plots/v2-sync signal-acfs.png  used on input line 288.
 (pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
-[11] [12 <../plots/v2-spec.png> <../plots/v2-moment-acfs.png>] [13 <../plots/v2-oil acceleration-acfs.png> <../plots/v2-force-acfs.png> <../plots/v2-acoustic-acfs.png>]
 <../plots/v2-lateral acceleration-acfs.png, id=72, 867.24pt x 361.35pt>
 File: ../plots/v2-lateral acceleration-acfs.png Graphic file (type png)
 <use ../plots/v2-lateral acceleration-acfs.png>
-Package pdftex.def Info: ../plots/v2-lateral acceleration-acfs.png  used on input line 300.
+Package pdftex.def Info: ../plots/v2-lateral acceleration-acfs.png  used on input line 297.
 (pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
 <../plots/v2-frontal acceleration-acfs.png, id=73, 867.24pt x 361.35pt>
 File: ../plots/v2-frontal acceleration-acfs.png Graphic file (type png)
 <use ../plots/v2-frontal acceleration-acfs.png>
-Package pdftex.def Info: ../plots/v2-frontal acceleration-acfs.png  used on input line 309.
+Package pdftex.def Info: ../plots/v2-frontal acceleration-acfs.png  used on input line 306.
 (pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 314.
+(Font)              <14.4> on input line 311.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 314.
+(Font)              <10> on input line 311.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 314.
-
-
-Package natbib Warning: Citation `deistler2022time' on page 14 undefined on input line 317.
-
-
-LaTeX Warning: Reference `tab:aacfstats' on page 14 undefined on input line 318.
-
-
-LaTeX Warning: Reference `tab:aacfstats' on page 14 undefined on input line 341.
-
-[14] [15 <../plots/v2-sync signal-acfs.png> <../plots/v2-lateral acceleration-acfs.png> <../plots/v2-frontal acceleration-acfs.png>]
+(Font)              <7> on input line 311.
+ [14] [15 <../plots/v2-sync signal-acfs.png> <../plots/v2-lateral acceleration-acfs.png> <../plots/v2-frontal acceleration-acfs.png>]
 <../plots/d4-moment-aacf.png, id=84, 867.24pt x 361.35pt>
 File: ../plots/d4-moment-aacf.png Graphic file (type png)
 <use ../plots/d4-moment-aacf.png>
-Package pdftex.def Info: ../plots/d4-moment-aacf.png  used on input line 347.
+Package pdftex.def Info: ../plots/d4-moment-aacf.png  used on input line 344.
 (pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
 <../plots/d6-moment-aacf.png, id=85, 867.24pt x 361.35pt>
 File: ../plots/d6-moment-aacf.png Graphic file (type png)
 <use ../plots/d6-moment-aacf.png>
-Package pdftex.def Info: ../plots/d6-moment-aacf.png  used on input line 356.
+Package pdftex.def Info: ../plots/d6-moment-aacf.png  used on input line 353.
 (pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
 <../plots/d8-moment-aacf.png, id=86, 867.24pt x 361.35pt>
 File: ../plots/d8-moment-aacf.png Graphic file (type png)
 <use ../plots/d8-moment-aacf.png>
-Package pdftex.def Info: ../plots/d8-moment-aacf.png  used on input line 365.
+Package pdftex.def Info: ../plots/d8-moment-aacf.png  used on input line 362.
 (pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
-
-
-LaTeX Warning: Reference `fig:d4-moment-aacf' on page 16 undefined on input line 370.
-
-
-LaTeX Warning: Reference `fig:d6-moment-aacf' on page 16 undefined on input line 370.
-
-
-LaTeX Warning: Reference `fig:d8-moment-aacf' on page 16 undefined on input line 370.
-
 <../plots/v2-moment-aacf.png, id=87, 867.24pt x 361.35pt>
 File: ../plots/v2-moment-aacf.png Graphic file (type png)
 <use ../plots/v2-moment-aacf.png>
-Package pdftex.def Info: ../plots/v2-moment-aacf.png  used on input line 377.
+Package pdftex.def Info: ../plots/v2-moment-aacf.png  used on input line 374.
 (pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
 <../plots/v6-moment-aacf.png, id=88, 867.24pt x 361.35pt>
 File: ../plots/v6-moment-aacf.png Graphic file (type png)
 <use ../plots/v6-moment-aacf.png>
-Package pdftex.def Info: ../plots/v6-moment-aacf.png  used on input line 387.
+Package pdftex.def Info: ../plots/v6-moment-aacf.png  used on input line 384.
 (pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
 <../plots/v10-moment-aacf.png, id=89, 867.24pt x 361.35pt>
 File: ../plots/v10-moment-aacf.png Graphic file (type png)
 <use ../plots/v10-moment-aacf.png>
-Package pdftex.def Info: ../plots/v10-moment-aacf.png  used on input line 397.
+Package pdftex.def Info: ../plots/v10-moment-aacf.png  used on input line 394.
 (pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
 <../plots/v17-moment-aacf.png, id=90, 867.24pt x 361.35pt>
 File: ../plots/v17-moment-aacf.png Graphic file (type png)
 <use ../plots/v17-moment-aacf.png>
-Package pdftex.def Info: ../plots/v17-moment-aacf.png  used on input line 407.
+Package pdftex.def Info: ../plots/v17-moment-aacf.png  used on input line 404.
 (pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
 <../plots/v20-moment-aacf.png, id=91, 867.24pt x 361.35pt>
 File: ../plots/v20-moment-aacf.png Graphic file (type png)
 <use ../plots/v20-moment-aacf.png>
-Package pdftex.def Info: ../plots/v20-moment-aacf.png  used on input line 416.
+Package pdftex.def Info: ../plots/v20-moment-aacf.png  used on input line 413.
 (pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
 <../plots/v24-moment-aacf.png, id=92, 867.24pt x 361.35pt>
 File: ../plots/v24-moment-aacf.png Graphic file (type png)
 <use ../plots/v24-moment-aacf.png>
-Package pdftex.def Info: ../plots/v24-moment-aacf.png  used on input line 425.
+Package pdftex.def Info: ../plots/v24-moment-aacf.png  used on input line 422.
 (pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
 <../plots/v25-moment-aacf.png, id=93, 867.24pt x 361.35pt>
 File: ../plots/v25-moment-aacf.png Graphic file (type png)
 <use ../plots/v25-moment-aacf.png>
-Package pdftex.def Info: ../plots/v25-moment-aacf.png  used on input line 434.
+Package pdftex.def Info: ../plots/v25-moment-aacf.png  used on input line 431.
 (pdftex.def)             Requested size: 403.31511pt x 168.04807pt.
-
-LaTeX Warning: Reference `fig:v25-moment-aacf' on page 16 undefined on input line 439.
-
-
-LaTeX Warning: Reference `tab:pointdiff' on page 16 undefined on input line 442.
-
-
-LaTeX Warning: Reference `fig:v25-moment-aacf' on page 16 undefined on input line 462.
-
-[16] [17 <../plots/d4-moment-aacf.png> <../plots/d6-moment-aacf.png> <../plots/d8-moment-aacf.png>] [18 <../plots/v2-moment-aacf.png> <../plots/v6-moment-aacf.png> <../plots/v10-moment-aacf.png>] [19 <../plots/v17-moment-aacf.png> <../plots/v20-moment-aacf.png> <../plots/v24-moment-aacf.png>]
-
-Package natbib Warning: Citation `deistler2022time' on page 20 undefined on input line 468.
-
-
-Package natbib Warning: Citation `theis2004modelling' on page 20 undefined on input line 468.
-
-[20] [21] (main.bbl
+ [16] [17 <../plots/d4-moment-aacf.png> <../plots/d6-moment-aacf.png> <../plots/d8-moment-aacf.png>] [18 <../plots/v2-moment-aacf.png> <../plots/v6-moment-aacf.png> <../plots/v10-moment-aacf.png>] [19 <../plots/v17-moment-aacf.png> <../plots/v20-moment-aacf.png> <../plots/v24-moment-aacf.png>] [20] [21] (main.bbl
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 11.
  (C:\Program Files\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -799,103 +624,74 @@ Underfull \hbox (badness 1199) in paragraph at lines 9--13
 []\T1/lmr/m/n/12 botek Präzi-sions-bohrtech-nik GmbH.  BTA - Sys-tem.  $\T1/lmtt/m/n/12 https : / / www . botek . de /
  []
 
-main.bbl:73: Undefined control sequence.
-l.73   \htmladdnormallink
-                         {\texttt{http:}}{http://ccrma.stanford.edu/~jos/sas...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--76
-[]\T1/lmr/m/n/12 Julius O. Smith.  \T1/lmr/m/it/12 Spec-tral Au-dio Sig-nal Pro-cess-ing\T1/lmr/m/n/12 .
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 87--93
+\T1/lmtt/m/n/12 / / unisig . com / information-[]and-[]resources / what-[]is-[]deep-[]hole-[]drilling /
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--76
-\T1/lmtt/m/n/12 http:\T1/lmr/m/n/12 http://ccrma.stanford.edu/ jos/sasp/\T1/lmtt/m/n/12 //-ccrma.stanford.edu/-jos/-sasp/\T1/lmr/m/n/12 ,
- []
-
-[22]) [23]
+) [23]
 <../plots/all-force.png, id=129, 1011.78pt x 1373.13pt>
 File: ../plots/all-force.png Graphic file (type png)
 <use ../plots/all-force.png>
-Package pdftex.def Info: ../plots/all-force.png  used on input line 487.
+Package pdftex.def Info: ../plots/all-force.png  used on input line 484.
 (pdftex.def)             Requested size: 492.94678pt x 669.00534pt.
 
 
-LaTeX Warning: Float too large for page by 29.55258pt on input line 490.
+LaTeX Warning: Float too large for page by 29.55258pt on input line 487.
 
 <../plots/all-moment.png, id=130, 1011.78pt x 1373.13pt>
 File: ../plots/all-moment.png Graphic file (type png)
 <use ../plots/all-moment.png>
-Package pdftex.def Info: ../plots/all-moment.png  used on input line 496.
+Package pdftex.def Info: ../plots/all-moment.png  used on input line 493.
 (pdftex.def)             Requested size: 492.94678pt x 669.00534pt.
 
-LaTeX Warning: Float too large for page by 29.55258pt on input line 499.
+LaTeX Warning: Float too large for page by 29.55258pt on input line 496.
 
 <../plots/all-sync signal.png, id=131, 1011.78pt x 1373.13pt>
 File: ../plots/all-sync signal.png Graphic file (type png)
 <use ../plots/all-sync signal.png>
-Package pdftex.def Info: ../plots/all-sync signal.png  used on input line 505.
+Package pdftex.def Info: ../plots/all-sync signal.png  used on input line 502.
 (pdftex.def)             Requested size: 492.94678pt x 669.00534pt.
 
-LaTeX Warning: Float too large for page by 29.55258pt on input line 508.
+LaTeX Warning: Float too large for page by 29.55258pt on input line 505.
 
 <../plots/all-oil acceleration.png, id=132, 1011.78pt x 1373.13pt>
 File: ../plots/all-oil acceleration.png Graphic file (type png)
 <use ../plots/all-oil acceleration.png>
-Package pdftex.def Info: ../plots/all-oil acceleration.png  used on input line 515.
+Package pdftex.def Info: ../plots/all-oil acceleration.png  used on input line 512.
 (pdftex.def)             Requested size: 492.94678pt x 669.00534pt.
 
-LaTeX Warning: Float too large for page by 29.55258pt on input line 518.
+LaTeX Warning: Float too large for page by 29.55258pt on input line 515.
 
 <../plots/all-acoustic.png, id=133, 1011.78pt x 1373.13pt>
 File: ../plots/all-acoustic.png Graphic file (type png)
 <use ../plots/all-acoustic.png>
-Package pdftex.def Info: ../plots/all-acoustic.png  used on input line 524.
+Package pdftex.def Info: ../plots/all-acoustic.png  used on input line 521.
 (pdftex.def)             Requested size: 492.94678pt x 669.00534pt.
 
-LaTeX Warning: Float too large for page by 29.55258pt on input line 527.
+LaTeX Warning: Float too large for page by 29.55258pt on input line 524.
 
 <../plots/all-frontal acceleration m.png, id=134, 1011.78pt x 1156.32pt>
 File: ../plots/all-frontal acceleration m.png Graphic file (type png)
 <use ../plots/all-frontal acceleration m.png>
-Package pdftex.def Info: ../plots/all-frontal acceleration m.png  used on input line 534.
+Package pdftex.def Info: ../plots/all-frontal acceleration m.png  used on input line 531.
 (pdftex.def)             Requested size: 492.94678pt x 563.37291pt.
 <../plots/all-lateral acceleration m.png, id=135, 1011.78pt x 1156.32pt>
 File: ../plots/all-lateral acceleration m.png Graphic file (type png)
 <use ../plots/all-lateral acceleration m.png>
-Package pdftex.def Info: ../plots/all-lateral acceleration m.png  used on input line 544.
+Package pdftex.def Info: ../plots/all-lateral acceleration m.png  used on input line 541.
 (pdftex.def)             Requested size: 492.94678pt x 563.37291pt.
-
-Package natbib Warning: There were undefined citations.
-
-[24] [25 <../plots/v25-moment-aacf.png>] [26 <../plots/all-force.png>] [27 <../plots/all-moment.png>] [28 <../plots/all-sync signal.png>] [29 <../plots/all-oil acceleration.png>] [30 <../plots/all-acoustic.png>] [31 <../plots/all-frontal acceleration m.png>] [32 <../plots/all-lateral acceleration m.png>] (main.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[24] [25 <../plots/v25-moment-aacf.png>] [26 <../plots/all-force.png>] [27 <../plots/all-moment.png>] [28 <../plots/all-sync signal.png>] [29 <../plots/all-oil acceleration.png>] [30 <../plots/all-acoustic.png>] [31 <../plots/all-frontal acceleration m.png>] [32 <../plots/all-lateral acceleration m.png>] (main.aux) ) 
 Here is how much of TeX's memory you used:
- 11215 strings out of 478927
- 201143 string characters out of 2862392
- 639289 words of memory out of 3000000
- 28844 multiletter control sequences out of 15000+600000
+ 11230 strings out of 478927
+ 201552 string characters out of 2862392
+ 640485 words of memory out of 3000000
+ 28857 multiletter control sequences out of 15000+600000
  485765 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,9n,108p,10701b,560s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (32 pages, 2935561 bytes).
+Output written on main.pdf (32 pages, 2936224 bytes).
 PDF statistics:
  245 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
