@@ -1,12 +1,12 @@
-\begin{thebibliography}{15}
+\begin{thebibliography}{14}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[botek Präzisionsbohrtechnik~GmbH(2023)]{botek2023}
-botek Präzisionsbohrtechnik~GmbH.
+\bibitem[{Botek Präzisionsbohrtechnik GmbH}(2023)]{botek2023}
+{Botek Präzisionsbohrtechnik GmbH}.
 \newblock {BTA - System}.
 \newblock \url{https://www.botek.de/en/deep-hole-drilling/bta-system/}, 2023.
 \newblock URL \url{https://www.botek.de/en/deep-hole-drilling/bta-system/}.
@@ -27,30 +27,13 @@ Michael Eid, Mario Gollwitzer, and Manfred Schmitt.
 \newblock \emph{Statistik und Forschungsmethoden}.
 \newblock Beltz, 2017.
 
-\bibitem[Harris et~al.(2020)Harris, Millman, van~der Walt, Gommers, Virtanen,
-  Cournapeau, Wieser, Taylor, Berg, Smith, Kern, Picus, Hoyer, van Kerkwijk,
-  Brett, Haldane, del R{\'{i}}o, Wiebe, Peterson, G{\'{e}}rard-Marchant,
-  Sheppard, Reddy, Weckesser, Abbasi, Gohlke, and Oliphant]{numpy}
-Charles~R. Harris, K.~Jarrod Millman, St{\'{e}}fan~J. van~der Walt, Ralf
-  Gommers, Pauli Virtanen, David Cournapeau, Eric Wieser, Julian Taylor,
-  Sebastian Berg, Nathaniel~J. Smith, Robert Kern, Matti Picus, Stephan Hoyer,
-  Marten~H. van Kerkwijk, Matthew Brett, Allan Haldane, Jaime~Fern{\'{a}}ndez
-  del R{\'{i}}o, Mark Wiebe, Pearu Peterson, Pierre G{\'{e}}rard-Marchant,
-  Kevin Sheppard, Tyler Reddy, Warren Weckesser, Hameer Abbasi, Christoph
-  Gohlke, and Travis~E. Oliphant.
-\newblock Array programming with {NumPy}.
-\newblock \emph{Nature}, 585\penalty0 (7825):\penalty0 357--362, September
-  2020.
-\newblock \doi{10.1038/s41586-020-2649-2}.
-\newblock URL \url{https://doi.org/10.1038/s41586-020-2649-2}.
-
-\bibitem[Hepperle(Year)]{gx1convert}
+\bibitem[Hepperle(2023)]{gx1convert}
 Tadeo Hepperle.
 \newblock gx1convert.
-\newblock \url{https://pypi.org/project/gx1convert/0.1.3/}, Year.
+\newblock \url{https://pypi.org/project/gx1convert/0.1.3/}, 2023.
 
 \bibitem[Hunter(2007)]{matplotlib}
-J.~D. Hunter.
+John~D. Hunter.
 \newblock Matplotlib: A 2d graphics environment.
 \newblock \emph{Computing in Science \& Engineering}, 9\penalty0 (3):\penalty0
   90--95, 2007.
@@ -72,10 +55,16 @@ Nils Raabe, Dirk Enk, Dirk Biermann, and Claus Weihs.
   Helmut-Schmidt-University, Hamburg, July 16-18, 2008}, pages 745--754.
   Springer, 2010.
 
-\bibitem[Smith(accessed <date>)]{SASPWEB2011}
+\bibitem[Rossum and Drake(2009)]{python}
+Guido~Van Rossum and Fred~L. Drake.
+\newblock \emph{Python 3 Reference Manual}.
+\newblock CreateSpace, Scotts Valley, CA, 2009.
+\newblock ISBN 1441412697.
+
+\bibitem[Smith(2023)]{SASPWEB2011}
 Julius~O. Smith.
 \newblock \emph{Spectral Audio Signal Processing}.
-\newblock http://ccrma.stanford.edu/~jos/sasp/, accessed <date>.
+\newblock http://ccrma.stanford.edu/~jos/sasp/, 2023.
 \newblock online book, 2011 edition.
 
 \bibitem[Theis(2004)]{theis2004modelling}
@@ -90,12 +79,6 @@ Winfried Theis.
   \url{https://unisig.com/information-and-resources/what-is-deep-hole-drilling/what-is-bta-drilling/},
   2023.
 \newblock Accessed: 2023-07-26.
-
-\bibitem[Van~Rossum and Drake(2009)]{python}
-Guido Van~Rossum and Fred~L. Drake.
-\newblock \emph{Python 3 Reference Manual}.
-\newblock CreateSpace, Scotts Valley, CA, 2009.
-\newblock ISBN 1441412697.
 
 \bibitem[{VDI-Richtlinie 3210}(1996)]{Tiefbohrverfahren}
 {VDI-Richtlinie 3210}.

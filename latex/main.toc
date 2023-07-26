@@ -1,0 +1,18 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Introduction}{3}{}%
+\contentsline {subsection}{\numberline {1.1}Prior Research}{4}{}%
+\contentsline {subsection}{\numberline {1.2}The Data}{5}{}%
+\contentsline {subsubsection}{\numberline {1.2.1}Labels}{7}{}%
+\contentsline {section}{\numberline {2}Methods}{7}{}%
+\contentsline {subsection}{\numberline {2.1}Short-time Fourier Transform (STFT)}{7}{}%
+\contentsline {subsection}{\numberline {2.2}Covariance and Correlation}{8}{}%
+\contentsline {subsection}{\numberline {2.3}Auto-correlation Function (ACF)}{9}{}%
+\contentsline {subsubsection}{\numberline {2.3.1}Absolute Area under the ACF ($A_{ACF}$)}{10}{}%
+\contentsline {section}{\numberline {3}Data Analysis}{10}{}%
+\contentsline {subsection}{\numberline {3.1}Frequencies and ACF}{11}{}%
+\contentsline {subsection}{\numberline {3.2}Detect chatter with $A_{ACF}$}{13}{}%
+\contentsline {section}{\numberline {4}Summary and Discussion}{21}{}%
+\contentsline {section}{Bibliography}{22}{}%
+\contentsline {section}{\nonumberline Appendix}{24}{}%
+\contentsline {subsection}{A \hspace *{0.15cm} Additional figures}{24}{}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
